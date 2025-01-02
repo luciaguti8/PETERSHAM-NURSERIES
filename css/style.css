@@ -10,7 +10,7 @@
     --white: #F6F6F6;
     --black: #222223;
     --grey: #BFBFBF;
-    --border: solid 1.5px;
+    --border: solid 1.5px;   
 }
 h1 {
     font-family: "Playfair Display", serif;
@@ -30,6 +30,12 @@ h3 {
     font-size: 48px;
     text-align: center;
 }
+h4 {
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
 p {
     font-family: "Lato", serif;
     font-weight: 300;
@@ -39,6 +45,9 @@ p {
 li {
     text-decoration: none;
     list-style: none;
+}
+ul {
+    padding-inline-start: 0;
 }
 button {
     padding: 4px 16px;
@@ -50,9 +59,55 @@ button:hover {
     border: var(--border) var(--primary-green);
     transition: ease-in 0.1s;
 }
+input {
+    padding: 4px 16px;
+    border: var(--border) var(--black);
+}
 section {   
     padding: 2vw 12vw;
 }
 .bg-custom {
     background-color: var(--white);
+}
+.navbar {
+    gap: 0.6rem;
+}
+.navbar-nav {
+    width: 90%;
+}
+.nav-separator {
+    width: 100%;
+    opacity: 100;
+    background-color: var(--black);
+    height: 1.5px;
+}
+.nav-link {
+    color: var(--black);
+    text-transform: uppercase;
+}
+.nav-link:hover {
+    color: var(--primary-pink);
+}
+.nav-link.active {
+    text-decoration: underline;
+}
+footer {
+    font-size: 12px;
+}
+#footer-a {
+    padding: 0 6vw;
+}
+#footer-a ul.col:first-child {
+    padding-left: 0;
+}
+#footer-b *{
+    color: var(--white);
+    background-color: var(--black);
+    padding: 0 6vw;
+}
+.container-fluid {
+    padding: 0 2vw;
+}
+.socials i, .socials li{
+    padding: 0 4px !important;
 }

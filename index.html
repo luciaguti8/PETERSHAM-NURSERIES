@@ -21,24 +21,75 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-custom">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-custom d-flex flex-column">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="" alt="">
+            <a class="navbar-brand navbar-toggler" href="#">
+                <img src="media/nav/isotipo.png" alt="" width="80">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-flex justify-content-evenly align-items-center">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Our story</a>
+                    <a class="nav-link" href="#">Menu</a>
+                    <a class="nav-link" href="#">Shop</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="media/nav/isotipo.png" alt="" width="80">
+                    </a>
+                    <a class="nav-link" href="#">Events</a>
+                    <a class="nav-link" href="#">The garden</a>
+                    <a class="nav-link" href="#">Our team</a>
+                    <a class="nav-link" href="#">philosophy</a>
                 </div>
             </div>
         </div>
+        <hr class="nav-separator">
     </nav>
+    <footer class="container-fluid px-0">
+        <div id="footer-a" class="row pb-4">
+            <div class="col-4 ps-0 pe-4">
+                <h4>Join our newsletter</h4>
+                <form class="row gap-2">
+                    <input type="text" id="user_name" name="name" placeholder="Name" required="">
+                    <input type="text" id="user_email" name="mail" placeholder="Mail" required="">
+                    <button>Send!</button>
+                </form>
+            </div>
+            <div class="col-8 ps-4 pe-0">
+                <h4>Opening hours</h4>
+                <div class="row gap-2">
+                    <ul class="col">
+                        <li><b>Monday</b></li>
+                        <li>Closed (Except bank holidays)</li>
+                    </ul>
+                    <ul class="col">
+                        <li><b>Tuesday to Wednesday</b></li>
+                        <li>12pm to 5pm (Last seating 3pm)</li>
+                    </ul>
+                    <ul class="col">
+                        <li><b>Thursday to Saturday</b></li>
+                        <li>Lunch 12pm to 5pm (Last seating 2.30pm)
+                            Dinner 6:30pm to 11pm (Last seating 8.30pm)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer-b">
+            <ul class="row py-2">
+                <li class="col d-flex justify-content-center">© 2023 PETERHAM NURSERIES </li>
+                <li class="d-flex col justify-content-center">
+                    <ul class="d-flex socials">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-tiktok"></i></li>
+                    </ul>
+                </li>
+                <li class="col d-flex justify-content-center">Back to top</li>
+            </ul>
+        </div>
+    </footer>
     <!-- JAVASCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
