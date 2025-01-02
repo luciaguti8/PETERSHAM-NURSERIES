@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
+
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -18,9 +21,101 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rouge+Script&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- menu -->
+    <section id="menu-card">
+        <div class="menu-logo">
+            <img src="media/favicon/logo.png"  
+            alt="Restaurant Logo">
+        </div>
+        <h1 class="section-title">Our Menu</h1>
+        <div class="menu-container">
+            <img 
+        src="media/menu.index/menu.jpeg"        alt="Pathway" class="menu-image">
+            <h3 class="menu-subtitle">New on the Menu</h3>
+            <p class="menu-description">
+                Discover the art of fine dining with our carefully curated menu inspired by the seasons. Join us for a gastronomic journey like no other.
+            </p>
+            <a href="menu.html" class="menu-button">Explore the Menu</a>
+        </div>
+    </section>
+    <!-- team -->
+    <section  id="team" class="carousel-container">
+        <div>
+            <h1>TEAM</h1>
+        </div>
+        <div class="swiper swiper-team">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card-team">
+                    <div class="card-img-team">
+                        <img src="media/team/team-1.jpg" alt="Foto 1">
+                        <p>Isabella Thornton<br>Executive chef</p>
+                    </div>
+                    <div class="card-info-team">
+                        <p>Isabella leads the Petersham Nurseries kitchen with passion and creativity. A specialist in sustainable cuisine, she combines local, seasonal ingredients to craft unique dishes that reflect the spirit of nature. With over 15 years of experience in award-winning restaurants, she is the mastermind behind every menu.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card-team">
+                    <div class="card-img-team">
+                        <img src="media/team/team-2.jpg" alt="Foto 2">
+                        <p>Liam Carter<br>Head of Front of House</p>
+                    </div>
+                    <div class="card-info-team">
+                        <p>Liam ensures that every guest has an unforgettable dining experience. With his warm and professional approach, he coordinates the waiting staff and creates a welcoming yet elegant atmosphere. His hospitality expertise allows him to anticipate the needs of every diner.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card-team">
+                    <div class="card-img-team">
+                        <img src="media/team/team-3.jpg" alt="Foto 3">
+                        <p>Elena Moretti<br>Sommelier</p>
+                    </div>
+                    <div class="card-info-team">
+                        <p>Originally from Tuscany, Elena brings a deep knowledge of organic and biodynamic wines. At Petersham Nurseries, she helps guests find the perfect wine pairing for their meals, ensuring that every bottle tells a story as rich as the restaurant's flavors.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card-team">
+                    <div class="card-img-team">
+                        <img src="media/team/team-4.jpg" alt="Foto 4">
+                        <p>Oliver Banks<br>Sous Chef</p>
+                    </div>
+                    <div class="card-info-team">
+                        <p>As Isabella's right-hand man, Oliver brings energy and technical skill to the kitchen. His specialty is desserts, which he embellishes with edible flowers and aromatic herbs, perfectly embodying the floral and botanical essence of the restaurant.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card-team">
+                    <div class="card-img-team">
+                        <img src="media/team/team-5.jpg" alt="Foto 5">
+                        <p>Sofia Blake<br>General Manager</p>
+                    </div>
+                    <div class="card-info-team">
+                        <p>Sofia oversees the restaurant’s daily operations, ensuring every detail is impeccable, from the decor to the guest experience. Her focus on sustainability and innovative vision keeps Petersham Nurseries at the forefront of the industry.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card-team">
+                    <div class="card-img-team">
+                        <img src="media/team/team-6.jpg" alt="Foto 6">
+                        <p>Maxwell Reed<br>Gardener and Ingredient Provider</p>
+                    </div>
+                    <div class="card-info-team">
+                        <p>Maxwell tends the restaurant's garden, cultivating herbs, flowers, and vegetables used in the dishes. His connection to the land ensures the kitchen is always stocked with the freshest, most natural ingredients.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   
+    <!-- SWIPER JS-->
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+    
     <!-- JAVASCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
