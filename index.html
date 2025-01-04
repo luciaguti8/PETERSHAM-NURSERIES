@@ -24,8 +24,135 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- LOCOMOTIVE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
 </head>
-<body>
+<body data-scroll-container>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-custom d-flex flex-column">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-toggler" href="#">
+                <img src="media/nav/isotipo.png" alt="" width="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-flex align-items-center row">
+                    <a class="nav-link col text-center" href="#">Home</a>
+                    <a class="nav-link col text-center" href="#">Our story</a>
+                    <a class="nav-link col text-center" href="#">Menu</a>
+                    <a class="nav-link col text-center" href="#">Shop</a>
+                    <a class="navbar-brand col text-center" href="#">
+                        <img src="media/nav/isotipo.png" alt="" width="80">
+                    </a>
+                    <a class="nav-link col text-center" href="#">Events</a>
+                    <a class="nav-link col text-center" href="#">The garden</a>
+                    <a class="nav-link col text-center" href="#">Our team</a>
+                    <a class="nav-link col text-center" href="#">philosophy</a>
+                </div>
+            </div>
+        </div>
+        <hr class="nav-separator">
+    </nav>
+    <header>
+        
+    </header>
+    <section id="intro" class="row">
+        <div class="col-4">
+            <img src="media/intro/intro.png" alt="" id="intro-img-a">
+            <img src="media/intro/intro.png" alt="" id="intro-img-b">
+        </div>
+        <div class="col-4 d-flex flex-column justify-content-center">
+            <h2>A place of calm, in tune with nature and living positively</h2>
+            <p>Stepping into the world of Petersham Nurseries is to experience something unique. A destination like no other which stretches boundaries in what is created, sourced and served. Exciting senses and provoking thought; a place of aspiration and inspiration.”</p>
+        </div>
+        <div class="col-4">
+            <img src="media/intro/intro.png" alt="" id="intro-img-c">
+        </div>
+    </section>
+    <section id="story" class="container-fluid row" data-scroll-container>
+        <div id="timeline" class="col-6 d-flex" data-scroll data-scroll-speed="0.5" data-scroll-sticky>
+            <!-- <div>
+                <hr id="hr-timeline">
+            </div> -->
+            <div>
+                <div class="timeline-item">
+                    <p>Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
+                </div>
+                <div class="timeline-item">
+                    <p>El Comienzo
+                    En 1997, los Boglione se mudaron de Londres al histórico Petersham House, una propiedad del siglo XVIII. Frente a ella, un vivero abandonado les inspiró para crear algo especial. Francesco, con sus recuerdos de viajes como joven hippie en la India, y Gael, con su natural elegancia y enfoque en la simplicidad, comenzaron a darle vida al espacio, integrando sus experiencias de viaje y raíces culturales italianas y australianas.</p>
+                </div>
+                <div class="timeline-item">
+                    <p>Evolución del Espacio
+                    A lo largo de los años, el vivero se transformó en un refugio que fusiona naturaleza, diseño y gastronomía. Con un firme compromiso con la sostenibilidad, ética y estética, el proyecto se convirtió en un destino donde cada detalle refleja la pasión de la familia por la vida positiva.</p>
+                </div>
+                <div class="timeline-item">
+                    <p>La Nueva Generación
+                    Desde 2011, Lara Boglione, hija mayor de Gael y Francesco, ha tomado las riendas del negocio como Directora General. Con una visión innovadora, Lara ha expandido la filosofía de Petersham, incluyendo la apertura de Petersham Nurseries en Covent Garden. Además, fundó junto a su esposo Petersham Cellar, una tienda de vinos italianos que celebra los valores familiares de tradición y calidad.</p>
+                </div>
+                <div class="timeline-item">
+                    <p>Hoy, Petersham Nurseries no solo es un lugar para reconectar con la naturaleza, sino también un símbolo de sostenibilidad y vida lenta, celebrando la belleza de lo simple en el hogar, el jardín y la mesa.</p>
+                </div>
+            </div>
+        </div>
+        <div id="timeline-img" class="col-6" data-scroll data-scroll-speed="4">
+            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+        </div>
+    </section>
+    <footer class="container-fluid px-0">
+        <div id="footer-a" class="row pb-4">
+            <div class="col-4 ps-0 pe-4">
+                <h4>Join our newsletter</h4>
+                <form class="row gap-2">
+                    <input type="text" id="user_name" name="name" placeholder="Name" required="">
+                    <input type="text" id="user_email" name="mail" placeholder="Mail" required="">
+                    <button>Send!</button>
+                </form>
+            </div>
+            <div class="col-8 ps-4 pe-0">
+                <h4>Opening hours</h4>
+                <div class="row gap-2">
+                    <ul class="col">
+                        <li><b>Monday</b></li>
+                        <li>Closed (Except bank holidays)</li>
+                    </ul>
+                    <ul class="col">
+                        <li><b>Tuesday to Wednesday</b></li>
+                        <li>12pm to 5pm (Last seating 3pm)</li>
+                    </ul>
+                    <ul class="col">
+                        <li><b>Thursday to Saturday</b></li>
+                        <li>Lunch 12pm to 5pm (Last seating 2.30pm)
+                            Dinner 6:30pm to 11pm (Last seating 8.30pm)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer-b">
+            <ul class="row py-2">
+                <li class="col d-flex justify-content-center">© 2023 PETERHAM NURSERIES </li>
+                <li class="d-flex col justify-content-center">
+                    <ul class="d-flex socials">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-tiktok"></i></li>
+                    </ul>
+                </li>
+                <li class="col d-flex justify-content-center"><a href="#">Back to top</a></li>
+            </ul>
+        </div>
+    </footer>
     <!-- menu -->
     <section id="menu-card">
         <div class="menu-logo">
@@ -199,6 +326,12 @@
     
     <!-- JAVASCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <!-- LOCOMOTIVE SCROLL -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    
 
     <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
