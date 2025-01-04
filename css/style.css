@@ -257,15 +257,18 @@ img#intro-img-c {
     transform: scale(1.05);
     opacity: 0.8;
 }
-.gallery {
-    margin: auto !important;
+.lb-outerContainer, .lb-dataContainer {
+    margin: 0 auto !important;
 }
 /* team */
-#team {
-    background-color: var(--white);
-}
 #team h1 {
     color: var(--black);
+}
+.swiper-wrapper {
+    gap: 30px;
+}
+.swiper-pagination {
+    gap: 8px;
 }
 #team .card-team {
     background: var(--primary-pink);
