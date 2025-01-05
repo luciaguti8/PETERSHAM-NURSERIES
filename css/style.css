@@ -76,7 +76,7 @@ section {
     width: 90%;
 }
 .nav-separator {
-    width: 100%;
+    width: 90%;
     opacity: 100;
     background-color: var(--black);
     height: 1.5px;
@@ -112,11 +112,18 @@ footer {
     padding: 0 4px !important;
 }
 
-
 header {
-    height: 50vh;
-    background-image: url("../media/header/header.png");;
-    background-size: cover  ;
+    background-color: var(--white);
+    padding: 2vw;
+}
+#header-img {
+    width: 90vw;
+    justify-self: center;
+}
+#header-img img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
 }
 #intro {
     padding: 2vw 0vw !important;
@@ -161,22 +168,31 @@ img#intro-img-c {
     height: 60vh;
     overflow-y: scroll;
 } */
+#story {
+    position: relative; /* Necesario para sticky */
+}
+
+#timeline {
+    position: relative; /* Sticky necesita que su contenedor directo sea relativo */
+    gap: 4vw;
+}
 #timeline {
     gap: 4vw;
     /* height: 40vh;
     overflow-y: scroll; */
 }
-#story::-webkit-scrollbar {
-    display: none;
-}
 .timeline-item {
     padding: 25vh 0;
+}
+.timeline-item:first-child{
+    padding-top: 0;
 }
 .timeline-img-item {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     padding-bottom: 1vw;
+    padding: 0;
 }
 
 /* menu */
