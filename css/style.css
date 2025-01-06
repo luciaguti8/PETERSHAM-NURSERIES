@@ -21,7 +21,7 @@ h1 {
 h2 {
     font-family: "Playfair Display", serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2.2vw;
     padding-bottom: 1.4vw;
 }
 h3 {
@@ -154,13 +154,19 @@ img#intro-img-c {
     aspect-ratio: 3 / 2;
     width: 28vw;
 }
-#hr-timeline {
+#intro-title h2:first-child {
+    padding-bottom: 0;
+}
+.has-scroll-smooth [data-scroll-container] {
+    min-height: 0 !important;
+}
+/* #hr-timeline {
     border-left: 1px solid hsla(200, 10%, 50%,100);
     height: 340vh;
     opacity: 100;
     background-color: var(--black);
     width: 1.5px;
-}
+} */
 #intro h2, #intro p {
     text-align: center;
 }
@@ -169,24 +175,18 @@ img#intro-img-c {
     overflow-y: scroll;
 } */
 #story {
-    position: relative; /* Necesario para sticky */
+    position: relative;
 }
-
-#timeline {
-    position: relative; /* Sticky necesita que su contenedor directo sea relativo */
+#timeline-a, #timeline-b, #timeline-c, #timeline-d, #timeline-e {
     gap: 4vw;
-}
-#timeline {
-    gap: 4vw;
-    /* height: 40vh;
-    overflow-y: scroll; */
-}
+    margin-bottom: 15vh !important;
+} 
 .timeline-item {
-    padding: 25vh 0;
+    padding-top: 40vh;
 }
-.timeline-item:first-child{
+/* .timeline-item:first-child{
     padding-top: 0;
-}
+} */ 
 .timeline-img-item {
     width: 100%;
     aspect-ratio: 16/9;
@@ -194,7 +194,17 @@ img#intro-img-c {
     padding-bottom: 1vw;
     padding: 0;
 }
-
+.timeline-text{
+    color: var(--grey);
+    transition: color 0.3s ease-in-out;
+}
+.timeline-text.is-inview {
+    color: var(--black); 
+}
+#timeline-text, #timeline-img {
+    margin-top: -20vh !important;
+    /* z-index: -1; */
+}
 /* menu */
 #menu-card {
     margin: auto !important;
@@ -275,6 +285,12 @@ img#intro-img-c {
 }
 .lb-outerContainer, .lb-dataContainer {
     margin: 0 auto !important;
+}
+.lb-loader {
+    display: none !important;
+}
+body.no-scroll {
+    overflow: hidden;
 }
 /* team */
 #team h1 {

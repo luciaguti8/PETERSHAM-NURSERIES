@@ -10,7 +10,16 @@ $(document).ready(function() {
             link.classList.add('active');
         });
     });
-});// team 
+});
+
+if (document.querySelector('.gallery-lightbox')) {
+lightbox.option({
+    'resizeDuration': 300,
+    'disableScrolling': true,
+    'fadeDuration': 300,
+});
+}
+// team 
 document.addEventListener('DOMContentLoaded', function() {
     var swiper = new Swiper(".swiper-team", {
         slidesPerView: 2,
