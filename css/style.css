@@ -237,16 +237,6 @@ img#intro-img-c {
     margin-bottom: 2rem;
     padding: 0 1rem;
 }
-.menu-container a {
-    padding: 4px 16px;
-    border: var(--border) var(--black);
-}
-.menu-container a:hover {
-    background-color: var(--primary-green);
-    color: var(--white);
-    border: var(--border) var(--primary-green);
-    transition: ease-in 0.1s;
-}
 /* menu gallery */
 .gallery img {
     transition: transform 0.3s ease, opacity 0.3s ease;
