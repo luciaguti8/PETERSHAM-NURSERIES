@@ -21,7 +21,7 @@ h1 {
 h2 {
     font-family: "Playfair Display", serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2.2vw;
     padding-bottom: 1.4vw;
 }
 h3 {
@@ -76,7 +76,7 @@ section {
     width: 90%;
 }
 .nav-separator {
-    width: 100%;
+    width: 90%;
     opacity: 100;
     background-color: var(--black);
     height: 1.5px;
@@ -112,11 +112,18 @@ footer {
     padding: 0 4px !important;
 }
 
-
 header {
-    height: 50vh;
-    background-image: url("../media/header/header.png");;
-    background-size: cover  ;
+    background-color: var(--white);
+    padding: 2vw;
+}
+#header-img {
+    width: 90vw;
+    justify-self: center;
+}
+#header-img img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
 }
 #intro {
     padding: 2vw 0vw !important;
@@ -147,13 +154,19 @@ img#intro-img-c {
     aspect-ratio: 3 / 2;
     width: 28vw;
 }
-#hr-timeline {
+#intro-title h2:first-child {
+    padding-bottom: 0;
+}
+.has-scroll-smooth [data-scroll-container] {
+    min-height: 0 !important;
+}
+/* #hr-timeline {
     border-left: 1px solid hsla(200, 10%, 50%,100);
     height: 340vh;
     opacity: 100;
     background-color: var(--black);
     width: 1.5px;
-}
+} */
 #intro h2, #intro p {
     text-align: center;
 }
@@ -161,24 +174,37 @@ img#intro-img-c {
     height: 60vh;
     overflow-y: scroll;
 } */
-#timeline {
+#story {
+    position: relative;
+}
+#timeline-a, #timeline-b, #timeline-c, #timeline-d, #timeline-e {
     gap: 4vw;
-    /* height: 40vh;
-    overflow-y: scroll; */
-}
-#story::-webkit-scrollbar {
-    display: none;
-}
+    margin-bottom: 15vh !important;
+} 
 .timeline-item {
-    padding: 25vh 0;
+    padding-top: 40vh;
 }
+/* .timeline-item:first-child{
+    padding-top: 0;
+} */ 
 .timeline-img-item {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     padding-bottom: 1vw;
+    padding: 0;
 }
-
+.timeline-text{
+    color: var(--grey);
+    transition: color 0.3s ease-in-out;
+}
+.timeline-text.is-inview {
+    color: var(--black); 
+}
+#timeline-text, #timeline-img {
+    margin-top: -20vh !important;
+    /* z-index: -1; */
+}
 /* menu */
 #menu-card {
     margin: auto !important;
@@ -249,6 +275,12 @@ img#intro-img-c {
 }
 .lb-outerContainer, .lb-dataContainer {
     margin: 0 auto !important;
+}
+.lb-loader {
+    display: none !important;
+}
+body.no-scroll {
+    overflow: hidden;
 }
 /* team */
 #team h1 {
