@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Petersham Nurseries</title>
 
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
@@ -40,17 +40,15 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-flex align-items-center row">
-                    <a class="nav-link col text-center" href="#">Home</a>
-                    <a class="nav-link col text-center" href="#">Our story</a>
                     <a class="nav-link col text-center" href="#">Menu</a>
-                    <a class="nav-link col text-center" href="#">Shop</a>
+                    <a class="nav-link col text-center" href="#">Our story</a>
+                    <a class="nav-link col text-center" href="#">Our team</a>
                     <a class="navbar-brand col text-center" href="#">
                         <img src="media/nav/isotipo.png" alt="" width="80">
                     </a>
-                    <a class="nav-link col text-center" href="#">Events</a>
                     <a class="nav-link col text-center" href="#">The garden</a>
-                    <a class="nav-link col text-center" href="#">Our team</a>
-                    <a class="nav-link col text-center" href="#">philosophy</a>
+                    <a class="nav-link col text-center" href="#">Shop</a>
+                    <a class="nav-link col text-center" href="#">Blog</a>
                 </div>
             </div>
         </div>
@@ -58,7 +56,7 @@
     </nav>
     <header>
         <div id="header-img">
-            <img src="media/header/header.png">
+            <img src="media/header/header.png" alt="">
         </div>
     </header>
     <section id="intro" class="row">
@@ -74,6 +72,26 @@
             <img src="media/intro/intro.png" alt="" id="intro-img-c" data-scroll data-scroll-speed="2">
         </div>
     </section>
+    <!-- menu -->
+    <section id="menu">
+        <div id="menu-card">
+            <div class="menu-logo">
+                <img src="media/favicon/logo.png"  
+                alt="Restaurant Logo">
+            </div>
+            <h1 class="section-title">Our Menu</h1>
+            <div class="menu-container">
+                <img 
+            src="media/menu.index/menu.jpeg" alt="Pathway" class="menu-image">
+                <h2 class="menu-subtitle">New on the Menu</h2>
+                <p class="menu-description">
+                    Discover the art of fine dining with our carefully curated menu inspired by the seasons. Join us for a gastronomic journey like no other.
+                </p>
+                <button onclick="location.href='menu.html'" class="menu-button">Explore the Menu</button>
+            </div>
+        </div>
+    </section>
+    <!-- STORY -->
     <section id="story" class="container-fluid row">
         <h1>Our story</h1>
         <!-- <div id="timeline" class="col-6 d-flex" data-scroll data-scroll-speed="0.5"> -->
@@ -97,9 +115,7 @@
                 </div>
             </div>
             
-            <div id="timeline-img" class="col-6" data-scroll data-scroll-speed="2">
-                <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-                <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+            <div id="timeline-img" class="col-6" data-scroll data-scroll-speed="1.5">
                 <img src="media/story/timeline.png" alt="" class="timeline-img-item">
                 <img src="media/story/timeline.png" alt="" class="timeline-img-item">
                 <img src="media/story/timeline.png" alt="" class="timeline-img-item">
@@ -164,25 +180,6 @@
             <img src="media/story/timeline.png" alt="" class="timeline-img-item">
             <img src="media/story/timeline.png" alt="" class="timeline-img-item">
         </div> -->
-    </section>
-    <!-- menu -->
-    <section id="menu">
-        <div id="menu-card">
-            <div class="menu-logo">
-                <img src="media/favicon/logo.png"  
-                alt="Restaurant Logo">
-            </div>
-            <h1 class="section-title">Our Menu</h1>
-            <div class="menu-container">
-                <img 
-            src="media/menu.index/menu.jpeg"        alt="Pathway" class="menu-image">
-                <h3 class="menu-subtitle">New on the Menu</h3>
-                <p class="menu-description">
-                    Discover the art of fine dining with our carefully curated menu inspired by the seasons. Join us for a gastronomic journey like no other.
-                </p>
-                <button onclick="location.href='menu.html'" class="menu-button">Explore the Menu</button>
-            </div>
-        </div>
     </section>
     <!-- team -->
     <section  id="team" class="carousel-container">
@@ -363,7 +360,7 @@
         </div>
         <div id="footer-b">
             <ul class="row py-2">
-                <li class="col d-flex justify-content-center">© 2023 PETERHAM NURSERIES </li>
+                <li class="col d-flex justify-content-center">© 2023 PETERSHAM NURSERIES </li>
                 <li class="d-flex col justify-content-center">
                     <ul class="d-flex socials">
                         <li><i class="fa-brands fa-instagram"></i></li>
@@ -389,7 +386,12 @@
     <!-- LOCOMOTIVE SCROLL -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 
-    
+    <!-- PARALLAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- MODEL VIEWER -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
 
     <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
