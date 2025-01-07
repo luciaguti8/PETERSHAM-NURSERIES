@@ -13,10 +13,11 @@
 }
 h1 {
     font-family: "Playfair Display", serif;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 500;
     font-size: 4vw;
     text-align: center;
+    font-style: italic;
 }
 h2 {
     font-family: "Playfair Display", serif;
@@ -64,7 +65,7 @@ input {
 }
 section {   
     background-color: var(--white);
-    padding: 2vw 12vw !important;
+    padding: 6vw 12vw !important;
 }
 .bg-custom {
     background-color: var(--white);
@@ -73,7 +74,7 @@ section {
     gap: 0.6rem;
 }
 .navbar-nav {
-    width: 90%;
+    width: 82%;
 }
 .nav-separator {
     width: 90%;
@@ -179,7 +180,7 @@ img#intro-img-c {
 }
 #timeline-a, #timeline-b, #timeline-c, #timeline-d, #timeline-e {
     gap: 4vw;
-    margin-bottom: 15vh !important;
+    margin-bottom: 4vw !important;
 } 
 .timeline-item {
     padding-top: 40vh;
@@ -189,7 +190,7 @@ img#intro-img-c {
 } */ 
 .timeline-img-item {
     width: 100%;
-    aspect-ratio: 16/9;
+    /* aspect-ratio: 14/9; */
     object-fit: cover;
     padding-bottom: 1vw;
     padding: 0;
@@ -204,24 +205,37 @@ img#intro-img-c {
 #timeline-text, #timeline-img {
     margin-top: -20vh !important;
     /* z-index: -1; */
+    min-height: 380vh !important;
+}
+#timeline-img {
+    min-height: 380vh !important;
 }
 /* menu */
+#menu {
+    background-color: var(--primary-green);
+}
 #menu-card {
     margin: auto !important;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--primary-pink);
-    padding: 4rem 2rem;
+    justify-content: center;
+    gap: 1vw;
+    background: var(--white);
+    padding: 4vw 4vw;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    height: 100vh; 
+    height: 95vh; 
     position: relative;
     overflow: hidden;
 }
 .menu-container {
-    text-align: center;
-    position: relative;
+    /* text-align: center;
+    position: relative; */
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+    align-items: center;
 }
 .menu-logo {
     display: flex;
@@ -253,15 +267,18 @@ img#intro-img-c {
 .menu-subtitle {
     /* font-size: 1.5rem;
     font-weight: bold; */
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    padding-bottom: 0;
     text-transform: uppercase;
     color: var(--primary-green);
+    padding-top: 2vw;
 }
 .menu-description {
     /* font-size: 1rem; */
     color: var(--black);
     margin-bottom: 2rem;
     padding: 0 1rem;
+    text-align: center;
 }
 /* menu gallery */
 .gallery img {

@@ -10,6 +10,34 @@ $(document).ready(function() {
             link.classList.add('active');
         });
     });
+    function ajustarAlturaImagenes() {
+        // Obtén la altura total de todos los textos combinados
+        var totalAlturaTexto = $('#timeline-text').outerHeight();
+    
+        // Cuenta cuántas imágenes hay
+        var numImagenes = $('.timeline-img-item').length;
+    
+        if (numImagenes > 0) {
+          // Calcula la altura que cada imagen debe ocupar
+          var alturaPorImagen = totalAlturaTexto / numImagenes;
+    
+          // Aplica la altura calculada a cada imagen
+          $('.timeline-img-item').each(function () {
+            $(this).css('height', alturaPorImagen + 'px');
+            $(this).css('width', '100%'); // Asegura que ocupen todo el ancho del contenedor
+            $(this).css('object-fit', 'cover'); // Ajusta la imagen dentro del espacio
+          });
+        }
+      }
+    
+      // Llama a la función al cargar la página
+      ajustarAlturaImagenes();
+    
+      // Llama a la función al redimensionar la ventana
+      $(window).resize(function () {
+        ajustarAlturaImagenes();
+    });
+
 });
 
 if (document.querySelector('.gallery-lightbox')) {
