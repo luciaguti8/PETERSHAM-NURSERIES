@@ -134,7 +134,7 @@ footer button:hover {
 
 header {
     background-color: var(--white);
-    padding: 2vw;
+    padding: 1vw;
 }
 #header-img {
     width: 90vw;
@@ -148,7 +148,7 @@ header {
 #header-text {
     position: absolute;
     z-index: 1;
-    top: 48vh;
+    top: 44vh;
     right: 8vw;
     color: var(--white);
 }
@@ -348,7 +348,7 @@ body.no-scroll {
 }
 .swiper-wrapper {
     gap: 30px;
-    margin-bottom: 40px !important;
+    margin-bottom: 2.8vw !important;
 }
 .swiper-pagination {
     gap: 8px;
