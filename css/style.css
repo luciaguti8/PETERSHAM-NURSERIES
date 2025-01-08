@@ -465,3 +465,64 @@ body.no-scroll {
     transition: clip-path 0.1s ease;
     pointer-events: none;
 }
+
+/* blog */
+.blog {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 2vw;
+}
+
+.blog-card {
+    width: 30vw;
+    padding: 1vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    text-align: center;
+    height: 200px; 
+    text-decoration: none;
+}
+
+.blog-card:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.blog-info {
+    padding-top: 1vw;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+#blog h4 {
+    padding-bottom: 0;
+    color: #516345;
+    margin: 0;
+    border: none; 
+    text-decoration: none; 
+}
+
+#blog p {
+    margin-top: 0.5em; 
+    color: #333;
+    border: none;
+    text-decoration: none; 
+}
+
+.blog-model {
+    width: 100%;
+}
