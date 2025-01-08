@@ -205,10 +205,11 @@ img#intro-img-c {
 } */ 
 .timeline-img-item {
     width: 100%;
+    /* height: auto; */
     /* aspect-ratio: 14/9; */
     object-fit: cover;
-    padding-bottom: 1vw;
-    padding: 0;
+    display: block;
+    padding-bottom: 20px;
 }
 .timeline-text{
     color: var(--grey);
@@ -217,13 +218,14 @@ img#intro-img-c {
 .timeline-text.is-inview {
     color: var(--black); 
 }
-#timeline-text, #timeline-img {
+#timeline-text {
     margin-top: -20vh !important;
     /* z-index: -1; */
     min-height: 380vh !important;
 }
 #timeline-img {
-    min-height: 380vh !important;
+    margin-top: -20vh !important;
+    /* max-height: 380vh; */
 }
 /* menu */
 #menu {
