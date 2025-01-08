@@ -48,7 +48,7 @@ $(document).ready(function() {
                 $(this).on('mousemove', function(event) {
                     const offsetX = event.offsetX;
                     const offsetY = event.offsetY;
-                    const radius = 80; // Ajusta el radio según prefieras
+                    const radius = 100; // Ajusta el radio según prefieras
     
                     // Cambiar el clip-path para crear el efecto de máscara
                     hoverImage.css('clip-path', `circle(${radius}px at ${offsetX}px ${offsetY}px)`);

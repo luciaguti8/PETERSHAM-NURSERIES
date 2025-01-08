@@ -10,6 +10,7 @@
     --black: #222223;
     --grey: #BFBFBF;
     --border: solid 1.5px;   
+    --swiper-navigation-size: 32px;
 }
 h1 {
     font-family: "Playfair Display", serif;
@@ -320,8 +321,11 @@ body.no-scroll {
     overflow: hidden;
 }
 /* team */
+#team {
+    background-color: var(--primary-green);
+}
 #team h1 {
-    color: var(--black);
+    color: var(--white);
 }
 .swiper-wrapper {
     gap: 30px;
@@ -330,7 +334,7 @@ body.no-scroll {
     gap: 8px;
 }
 #team .card-team {
-    background: var(--primary-pink);
+    background: var(--white);
     padding: 2vw;
     display: flex;
     flex-direction: row;
@@ -341,7 +345,6 @@ body.no-scroll {
     min-height: 52vh;
 }
 #team .card-img-team p {
-    background-color: var(--primary-pink);
     text-align: center;
     font-style: italic;
     line-height: 1.8vw;
@@ -365,6 +368,14 @@ body.no-scroll {
 }
 #team .card-info-team p {
     color: var(--black);
+}
+.swiper-button-next, .swiper-button-prev {
+    color: var(--black);
+    top: 46%;
+    right: 6px;
+}
+.swiper-button-prev {
+    left: 6px;
 }
 /* shop */
 .shop {
