@@ -526,3 +526,45 @@ body.no-scroll {
 .blog-model {
     width: 100%;
 }
+
+
+
+
+
+@media (max-width: 768px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .blog-card {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .blog-card {
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #blog h1 {
+        font-size: 28px; 
+    }
+    
+    .blog-info{
+        flex-grow: 0.2; 
+
+    }
+
+    .blog-info h4 {
+        font-size: 18px; 
+    }
+    .blog-info p {
+        font-size: 14px; 
+    }
+}
