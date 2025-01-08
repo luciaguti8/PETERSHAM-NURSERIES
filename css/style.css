@@ -305,6 +305,9 @@ img#intro-img-c {
     transform: scale(1.05);
     opacity: 0.8;
 }
+.lb-caption {
+    color: var(--white);
+}
 .lb-outerContainer, .lb-dataContainer {
     margin: 0 auto !important;
 }
