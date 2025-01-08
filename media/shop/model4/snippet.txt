@@ -1,0 +1,1 @@
+<model-viewer src="lancome_logo.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0" exposure="0.57" auto-rotate> </model-viewer>

@@ -92,11 +92,26 @@ section {
 .nav-link.active {
     text-decoration: underline;
 }
+.hide {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+.show {
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+}
 footer {
     font-size: 12px;
+    background-color: var(--primary-green);
+}   
+footer h4, footer li, footer b {
+    color: var(--white);
+}
+footer button:hover {
+    border: var(--border) var(--white);
 }
 #footer-a {
-    padding: 0 6vw;
+    padding: 2vw 6vw;
 }
 #footer-a ul.col:first-child {
     padding-left: 0;
@@ -119,7 +134,7 @@ header {
 }
 #header-img {
     width: 90vw;
-    justify-self: center;
+    margin: 0 auto !important;
 }
 #header-img img {
     width: 100%;
@@ -346,6 +361,41 @@ body.no-scroll {
 #team .card-info-team p {
     color: var(--black);
 }
+/* shop */
+.shop {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 2vw;
+}
+.shop-card {
+    width: 30vw;    
+    padding: 1vw;
+    border: var(--border) var(--black);
+}
+.shop-card img {
+    width: 100%;
+}
+.shop-info {
+    padding-top: 1vw;
+}
+#shop h4 {
+    padding-bottom: 0;
+}
+.shop-model {
+    width: 100%;
+}
+.shop-card model-viewer {
+    height: 40vh;
+}
+
+
 /* garden gallery */
 .gallery-item {
     position: relative;
@@ -363,3 +413,16 @@ body.no-scroll {
     transform: scale(1.02);
     opacity: 0.8;
 } */
+
+
+.garden-hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 0.1s ease;
+    pointer-events: none;
+}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petersham Nurseries</title>
-
+    <link rel="icon" href="media/favicon/logo.png" type="image/x-icon">
+    
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
 
@@ -30,7 +31,7 @@
 
 </head>
 <body data-scroll-container>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-custom d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom d-flex flex-column">
         <div class="container-fluid">
             <a class="navbar-brand navbar-toggler" href="#">
                 <img src="media/nav/isotipo.png" alt="" width="80">
@@ -254,12 +255,14 @@
         <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="gallery-item">
-                    <img src="media/garden-gallery/garden1.jpeg" alt="Foto 1">
+                    <img src="media/garden-gallery/garden1.jpeg" alt="Foto 1" class="garden-main-img">
+                    <img src="media/garden-gallery/garden2.jpeg" alt="Foto 1" class="garden-hover-img">
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="gallery-item">
                     <img src="media/garden-gallery/garden2.jpeg" alt="Foto 2">
+                    <img src="media/garden-gallery/garden1.jpeg" alt="Foto 1" class="garden-hover-img">
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
@@ -329,6 +332,58 @@
             </div>
         </div>
     </section>
+    <section id="shop" class="shop" data-scroll-container>
+        <div class="cards" data-scroll data-scroll-direction="horizontal">
+            <div class="shop-card">
+                <!-- <model-viewer src="media/shop/model4/lancome_logo.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" poster="media/shop/model4/poster.webp" shadow-intensity="0" exposure="0.57" auto-rotate> </model-viewer> -->
+                <img src="media/shop/vase.png">
+                <div class="shop-info d-flex justify-content-between">
+                    <h4>Violetta vase</h4>
+                    <p>£13.50</p>
+                </div>
+            </div>
+            <div class="shop-card">
+                <!-- <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer> -->
+                <img src="media/shop/vase.png">
+                <div class="shop-info d-flex justify-content-between">
+                    <h4>Violetta vase</h4>
+                    <p>£13.50</p>
+                </div>
+            </div>        
+            <div class="shop-card">
+                <!-- <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer> -->
+                <img src="media/shop/vase.png">
+                <div class="shop-info d-flex justify-content-between">
+                    <h4>Violetta vase</h4>
+                    <p>£13.50</p>
+                </div>
+            </div>
+            <div class="shop-card">
+                <!-- <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer> -->
+                <img src="media/shop/vase.png">
+                <div class="shop-info d-flex justify-content-between">
+                    <h4>Violetta vase</h4>
+                    <p>£13.50</p>
+                </div>
+            </div>
+            <div class="shop-card">
+                <!-- <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer> -->
+                <img src="media/shop/vase.png">
+                <div class="shop-info d-flex justify-content-between">
+                    <h4>Violetta vase</h4>
+                    <p>£13.50</p>
+                </div>
+            </div>
+            <div class="shop-card">
+                <!-- <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer> -->
+                <img src="media/shop/vase.png">
+                <div class="shop-info d-flex justify-content-between">
+                    <h4>Violetta vase</h4>
+                    <p>£13.50</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="container-fluid px-0">
         <div id="footer-a" class="row pb-4">
             <div class="col-4 ps-0 pe-4">
@@ -374,7 +429,12 @@
     </footer>
     
     <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Incluye la librería de GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <!-- Incluye el plugin ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+
    
     <!-- SWIPER JS-->
     <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
@@ -382,12 +442,12 @@
     <!-- JAVASCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-
     <!-- LOCOMOTIVE SCROLL -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 
     <!-- PARALLAX -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script>
+
 
     <!-- MODEL VIEWER -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>

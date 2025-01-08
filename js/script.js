@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
-        smooth: true
+        smooth: true,
     });
 
     document.querySelectorAll('.nav-link').forEach(link => {
@@ -10,6 +10,9 @@ $(document).ready(function() {
             link.classList.add('active');
         });
     });
+    
+
+
     function ajustarAlturaImagenes() {
         // Obtén la altura total de todos los textos combinados
         var totalAlturaTexto = $('#timeline-text').outerHeight();
@@ -28,17 +31,41 @@ $(document).ready(function() {
             $(this).css('object-fit', 'cover'); // Ajusta la imagen dentro del espacio
           });
         }
-      }
-    
-      // Llama a la función al cargar la página
-      ajustarAlturaImagenes();
-    
-      // Llama a la función al redimensionar la ventana
-      $(window).resize(function () {
+    }
+    // Llama a la función al cargar la página
+    ajustarAlturaImagenes();
+    // Llama a la función al redimensionar la ventana
+    $(window).resize(function () {
         ajustarAlturaImagenes();
     });
 
+    function hoverGarden() {
+        if ($(window).width() > 992) {
+            $('.gallery-item').each(function() {
+                const hoverImage = $(this).find('.garden-hover-img');
+    
+                // Evento de movimiento del ratón
+                $(this).on('mousemove', function(event) {
+                    const offsetX = event.offsetX;
+                    const offsetY = event.offsetY;
+                    const radius = 80; // Ajusta el radio según prefieras
+    
+                    // Cambiar el clip-path para crear el efecto de máscara
+                    hoverImage.css('clip-path', `circle(${radius}px at ${offsetX}px ${offsetY}px)`);
+                });
+    
+                // Cuando el ratón sale, ocultar la máscara
+                $(this).on('mouseleave', function() {
+                    hoverImage.css('clip-path', 'circle(0% at 50% 50%)');
+                });
+            });
+        }   
+    }
+    
+    hoverGarden();
+    $(window).on('resize', hoverGarden);
 });
+    
 
 if (document.querySelector('.gallery-lightbox')) {
 lightbox.option({
