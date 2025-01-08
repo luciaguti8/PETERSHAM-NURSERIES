@@ -19,6 +19,7 @@ h1 {
     font-size: 4vw;
     text-align: center;
     font-style: italic;
+    padding-bottom: 2.4vw;
 }
 h2 {
     font-family: "Playfair Display", serif;
@@ -66,7 +67,7 @@ input {
 }
 section {   
     background-color: var(--white);
-    padding: 6vw 12vw !important;
+    padding: 4vw 12vw !important;
 }
 .bg-custom {
     background-color: var(--white);
@@ -77,18 +78,20 @@ section {
 .navbar-nav {
     width: 82%;
 }
-.nav-separator {
+/* .nav-separator {
     width: 90%;
     opacity: 100;
     background-color: var(--black);
     height: 1.5px;
-}
+} */
 .nav-link {
     color: var(--black);
     text-transform: uppercase;
+    transition: font-weight 0.3s ease-in-out;
 }
 .nav-link:hover {
-    color: var(--primary-pink);
+    color: var(--primary-green);
+    font-weight: 900;
 }
 .nav-link.active {
     text-decoration: underline;
@@ -141,6 +144,16 @@ header {
     width: 100%;
     height: 80vh;
     object-fit: cover;
+}
+#header-text {
+    position: absolute;
+    z-index: 1;
+    top: 48vh;
+    right: 8vw;
+    color: var(--white);
+}
+#header-text h1 {
+    text-align: start;
 }
 #intro {
     padding: 2vw 0vw !important;
@@ -264,17 +277,17 @@ img#intro-img-c {
     width: 20%;
     height: auto;
 }
-.menu-header {
-    /* font-size: 3rem; */
-    /* font-style: italic; */
-    /* font-weight: 400; */
+/* .menu-header {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
     color: var(--primary-green);
     position: absolute;
     top: -2rem;
     left: -1rem;
     z-index: -1;
     opacity: 0.1;
-}
+} */
 .menu-image {
     width: 60%;
     height: auto;
@@ -297,6 +310,9 @@ img#intro-img-c {
     margin-bottom: 2rem;
     padding: 0 1rem;
     text-align: center;
+}
+#menu h1, #header-text h2 {
+    padding-bottom: 0 !important;
 }
 /* menu gallery */
 .gallery img {
@@ -322,16 +338,23 @@ body.no-scroll {
 }
 /* team */
 #team {
+    margin-top: -24vh !important;
     background-color: var(--primary-green);
+    position: relative;
+    z-index: 1;
 }
 #team h1 {
     color: var(--white);
 }
 .swiper-wrapper {
     gap: 30px;
+    margin-bottom: 40px !important;
 }
 .swiper-pagination {
     gap: 8px;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--white);
 }
 #team .card-team {
     background: var(--white);
@@ -372,10 +395,10 @@ body.no-scroll {
 .swiper-button-next, .swiper-button-prev {
     color: var(--black);
     top: 46%;
-    right: 6px;
+    right: 8px;
 }
 .swiper-button-prev {
-    left: 6px;
+    left: 8px;
 }
 /* shop */
 .shop {
