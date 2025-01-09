@@ -75,9 +75,10 @@ section {
 /* nav  */
 .navbar {
     gap: 0.6rem;
+    padding: 0 12px;
 }
 .navbar-nav {
-    width: 82%;
+    width: 100%;
 }
 .navbar-brand {
     padding: 0 !important;
@@ -393,60 +394,21 @@ body.no-scroll {
 /* blog */
 #blog {
     background-color: var(--primary-green);
-    position: relative;
     width: 100vw;
     overflow: hidden;
+}
+#blog img {
+    width: 80%;
 }
 #blog h1 {
     color: var(--white);
 }
-.cards {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    gap: 2vw;
-}
-.blog-card {
+.cards-blog {
     background-color: var(--white);
-    width: 30vw;
-    padding: 1vw;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    text-align: center;
-    height: 200px; 
-    text-decoration: none;
 }
 .blog-card:hover {
     transform: scale(1.1);
     text-decoration: none;
-}
-.blog-info {
-    padding-top: 1vw;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center;
-}
-#blog h4 {
-    padding-bottom: 0;
-    color: #516345;
-    margin: 0;
-    border: none; 
-    text-decoration: none; 
-}
-#blog p {
-    margin-top: 0.5em; 
-    color: #333;
-    border: none;
-    text-decoration: none; 
-}
-.blog-model {
-    width: 100%;
 }
 /* shop */
 .shop {
@@ -511,37 +473,40 @@ footer button:hover {
     padding: 0 4px !important;
 }
 
-/* media queris */
-@media (max-width: 768px) {
-    .cards {
-        display: flex;
-        flex-direction: column;
-
+/* media query */
+@media screen and (max-width: 992px) {
+    .navbar-nav > .navbar-brand {
+        display: none;    
     }
-    .blog-card {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
+    .navbar-nav {
+        padding-bottom: 32px;
     }
-}
-
-@media (max-width: 480px) {
-    .blog-card {
-        width: 100%;
-        padding-left: 1em;
-        padding-right: 1em;
+    h1 {
+        font-size: 6vw;
     }
-    #blog h1 {
-        font-size: 28px; 
+    h2 {
+        font-size: 2.8vw;
     }
-    .blog-info{
-        flex-grow: 0.2; 
-
+    h3 {
+        font-size: 24px;    
+        padding-bottom: 12px;
     }
-    .blog-info h4 {
-        font-size: 18px; 
+    h4 {
+        font-size: 16px;
+        padding-bottom: 8px;
     }
-    .blog-info p {
-        font-size: 14px; 
+    p {
+        font-size: 14px;
+    }
+    #header-text {
+        top: 54vh;
+    }
+    img#intro-img-c {
+        top: 3vw;
+        aspect-ratio: 2 / 3;
+        width: 20vw;
+    }
+    img#intro-img-b {
+        display: none;
     }
 }
