@@ -396,7 +396,6 @@ body.no-scroll {
 /* blog */
 #blog {
     background-color: var(--primary-green);
-    width: 100vw;
     overflow: hidden;
 }
 #blog img {
@@ -405,12 +404,26 @@ body.no-scroll {
 #blog h1 {
     color: var(--white);
 }
-.cards-blog {
-    background-color: var(--white);
+.blog-card {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.blog-card:hover {
-    transform: scale(1.1);
-    text-decoration: none;
+.blog-card img {
+    border-radius: 0;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 300px;
+}
+.blog-card p {
+    text-align: center;
 }
 /* shop */
 .shop {
@@ -512,12 +525,16 @@ footer button:hover {
         font-size: 8vw;
     }
     p {
-        font-size: 10px;
+        font-size: 12px;
     }
     #team .card-team {
         min-height: 34vh;
     }
     #menu-card {
         height: 600px;
+    }
+    .blog-card img {
+        aspect-ratio: 4/3;
+        max-width: 300px;
     }
 }
