@@ -503,6 +503,9 @@ footer button:hover {
     img#intro-img-b {
         display: none;
     }
+    #menu-card {
+        height: 700px;
+    }
 }
 @media screen and (max-width: 756px) {
     h1 {
@@ -513,5 +516,8 @@ footer button:hover {
     }
     #team .card-team {
         min-height: 34vh;
+    }
+    #menu-card {
+        height: 600px;
     }
 }
