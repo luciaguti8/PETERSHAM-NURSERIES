@@ -31,7 +31,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand navbar-toggler" href="#">
                 <img src="media/nav/isotipo.png" alt="" width="80">
@@ -61,8 +61,8 @@
                 <img src="media/header/header.jpeg" alt="">
             </div>
             <div id="header-text" class="d-flex flex-column align-items-end">
-                <h1>Petersham Nurseries</h1>
-                <h2>London, 1997</h2>
+                <h1 data-scroll data-scroll-speed="2" data-scroll-delay="0.2">Petersham Nurseries</h1>
+                <h2 data-scroll data-scroll-speed="2.5" data-scroll-delay="0.2">London, 1997</h2>
             </div>
         </header>
         <section id="intro" class="row">
@@ -80,16 +80,15 @@
         </section>
         <!-- menu -->
         <section id="menu">
-            <div id="menu-card">
+            <div id="menu-card" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.1">
                 <div class="menu-logo">
                     <img src="media/favicon/logo.png"  
                     alt="Restaurant Logo">
                 </div>
-                <h1 class="section-title">Our Menu</h1>
+                <h1 class="section-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.2" data-scroll-delay="0.2">Our Menu</h1>
                 <div class="menu-container">
-                    <img 
-                src="media/menu.index/menu.jpeg" alt="Pathway" class="menu-image">
-                    <h2 class="menu-subtitle">New on the Menu</h2>
+                    <img src="media/menu.index/menu.jpeg" alt="Pathway" class="menu-image">
+                    <h2 class="menu-subtitle" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.2" data-scroll-delay="0.2">New on the Menu</h2>
                     <p class="menu-description">
                         Discover the art of fine dining with our carefully curated menu inspired by the seasons. Join us for a gastronomic journey like no other.
                     </p>
@@ -354,7 +353,7 @@
         <section id="shop" class="shop" data-scroll-container>
             <div class="cards" data-scroll data-scroll-direction="horizontal">
                 <div class="shop-card">
-                    <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                    <model-viewer src="media/shop/ensaladera.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" auto-rotate class="shop-model"></model-viewer>
                     <!-- <img src="media/shop/vase.png"> -->
                     <div class="shop-info d-flex justify-content-between">
                         <h4>Violetta vase</h4>
@@ -362,7 +361,7 @@
                     </div>
                 </div>
                 <div class="shop-card">
-                    <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                    <model-viewer src="media/shop/tablascortar.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
                     <!-- <img src="media/shop/vase.png"> -->
                     <div class="shop-info d-flex justify-content-between">
                         <h4>Violetta vase</h4>
@@ -370,7 +369,7 @@
                     </div>
                 </div>        
                 <div class="shop-card">
-                    <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                    <model-viewer src="media/shop/taza.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
                     <!-- <img src="media/shop/vase.png"> -->
                     <div class="shop-info d-flex justify-content-between">
                         <h4>Violetta vase</h4>
