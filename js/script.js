@@ -9,6 +9,24 @@ $(document).ready(function() {
             smooth: true
         }
     });
+    const anchors = document.querySelectorAll('a[href^="#"]');
+
+    anchors.forEach(anchor => {
+        anchor.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevenir el comportamiento por defecto del navegador
+
+            // Obtener el ID de la sección a la que apunta el href del enlace
+            const targetId = anchor.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            console.log("Element", targetId);
+            if (targetElement) {
+                // Usar Locomotive para navegar a la sección
+                scroll.scrollTo(targetElement);
+            }
+        });
+    });
+
+
     window.addEventListener('load', () => {
         scroll.update();
       });
