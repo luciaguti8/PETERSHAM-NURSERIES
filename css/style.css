@@ -445,7 +445,6 @@ body.no-scroll {
     height: 40vh;
 }
 
-
 /* garden gallery */
 .gallery-item {
     position: relative;
@@ -478,10 +477,15 @@ body.no-scroll {
 }
 
 /* blog */
-.blog {
+#blog {
+    background-color: var(--primary-green);
     position: relative;
     width: 100vw;
     overflow: hidden;
+}
+
+#blog h1 {
+    color: var(--white);
 }
 
 .cards {
@@ -492,6 +496,7 @@ body.no-scroll {
 }
 
 .blog-card {
+    background-color: var(--white);
     width: 30vw;
     padding: 1vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

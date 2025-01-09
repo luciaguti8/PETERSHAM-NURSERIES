@@ -363,9 +363,8 @@
                 </div>            
             </div>
         </section>
-        <section id="shop" class="shop">
-            <h1>Shop</h1>
-            <div class="cards">
+        <section id="shop" class="shop" data-scroll-container>
+            <div class="cards" data-scroll data-scroll-direction="horizontal">
                 <div class="shop-card">
                     <model-viewer src="media/shop/ensaladera.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" auto-rotate class="shop-model"></model-viewer>
                     <!-- <img src="media/shop/vase.png"> -->
@@ -424,7 +423,35 @@
                 </a>
             </div>
         </section>
-        
+        <!-- shop -->
+        <section id="shop" class="shop" data-scroll-container>
+            <div class="cards" data-scroll data-scroll-direction="horizontal">
+                <div class="shop-card">
+                    <model-viewer src="media/shop/ensaladera.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" auto-rotate class="shop-model"></model-viewer>
+                    <!-- <img src="media/shop/vase.png"> -->
+                    <div class="shop-info d-flex justify-content-between">
+                        <h4>Violetta vase</h4>
+                        <p>£13.50</p>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <model-viewer src="media/shop/tablascortar.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                    <!-- <img src="media/shop/vase.png"> -->
+                    <div class="shop-info d-flex justify-content-between">
+                        <h4>Violetta vase</h4>
+                        <p>£13.50</p>
+                    </div>
+                </div>        
+                <div class="shop-card">
+                    <model-viewer src="media/shop/taza.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                    <!-- <img src="media/shop/vase.png"> -->
+                    <div class="shop-info d-flex justify-content-between">
+                        <h4>Violetta vase</h4>
+                        <p>£13.50</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="container-fluid px-0">
             <div id="footer-a" class="row pb-4">
                 <div class="col-4 ps-0 pe-4">
@@ -487,11 +514,7 @@
     <!-- LOCOMOTIVE SCROLL -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 
-    <!-- PARALLAX -->
-    <script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script>
-
-    <!-- MODEL VIEWER -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    
 
     <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
