@@ -1,7 +1,6 @@
 * {
     color: var(--black);
     margin: 0 !important;
-    scroll-behavior: smooth;
 }
 :root {
     --primary-pink: #F8DCDA;
