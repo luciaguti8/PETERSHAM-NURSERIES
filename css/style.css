@@ -338,7 +338,9 @@ body.no-scroll {
 #team .card-img-team p {
     text-align: center;
     font-style: italic;
-    line-height: 1.8vw;
+    /* line-height: 1.8vw; */
+    padding-top: 8px;
+    /* padding-bottom: 2px; */
 }
 #team .card-img-team {
     width: 40%;
@@ -487,14 +489,6 @@ footer button:hover {
     h2 {
         font-size: 2.8vw;
     }
-    h3 {
-        font-size: 24px;    
-        padding-bottom: 12px;
-    }
-    h4 {
-        font-size: 16px;
-        padding-bottom: 8px;
-    }
     p {
         font-size: 14px;
     }
@@ -508,5 +502,16 @@ footer button:hover {
     }
     img#intro-img-b {
         display: none;
+    }
+}
+@media screen and (max-width: 756px) {
+    h1 {
+        font-size: 8vw;
+    }
+    p {
+        font-size: 10px;
+    }
+    #team .card-team {
+        min-height: 34vh;
     }
 }
