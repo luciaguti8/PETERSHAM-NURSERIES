@@ -28,9 +28,12 @@ h2 {
     padding-bottom: 1.4vw;
 }
 h3 {
-    font-family: "Rouge Script", serif;
-    font-size: 48px;
-    text-align: center;
+    /* font-family: "Rouge Script", serif; */
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 600;
+    /* text-align: center; */
+    padding-bottom: 12px;
 }
 h4 {
     font-family: "Lato", serif;
@@ -78,6 +81,9 @@ section {
 .navbar-nav {
     width: 82%;
 }
+.navbar-brand {
+    padding: 0 !important;
+}
 /* .nav-separator {
     width: 90%;
     opacity: 100;
@@ -107,6 +113,8 @@ section {
 footer {
     font-size: 12px;
     background-color: var(--primary-green);
+    position: relative;
+    z-index: 1;
 }   
 footer h4, footer li, footer b {
     color: var(--white);
@@ -134,7 +142,7 @@ footer button:hover {
 
 header {
     background-color: var(--white);
-    padding: 2vw;
+    padding: 4vh;
 }
 #header-img {
     width: 90vw;
@@ -148,7 +156,7 @@ header {
 #header-text {
     position: absolute;
     z-index: 1;
-    top: 48vh;
+    top: 44vh;
     right: 8vw;
     color: var(--white);
 }
@@ -209,7 +217,7 @@ img#intro-img-c {
 }
 #timeline-a, #timeline-b, #timeline-c, #timeline-d, #timeline-e {
     gap: 4vw;
-    margin-bottom: 4vw !important;
+    margin-bottom: 2vw !important;
 } 
 .timeline-item {
     padding-top: 40vh;
@@ -229,7 +237,7 @@ img#intro-img-c {
     color: var(--grey);
     transition: color 0.3s ease-in-out;
 }
-.timeline-text.is-inview {
+.is-inview .timeline-text {
     color: var(--black); 
 }
 #timeline-text {
@@ -315,6 +323,9 @@ img#intro-img-c {
     padding-bottom: 0 !important;
 }
 /* menu gallery */
+.gallery-menu {
+    background-color: var(--primary-green);
+}
 .gallery img {
     transition: transform 0.3s ease, opacity 0.3s ease;
     object-fit: cover;
@@ -348,7 +359,7 @@ body.no-scroll {
 }
 .swiper-wrapper {
     gap: 30px;
-    margin-bottom: 40px !important;
+    margin-bottom: 2.8vw !important;
 }
 .swiper-pagination {
     gap: 8px;

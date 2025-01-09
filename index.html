@@ -41,15 +41,15 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-flex align-items-center row">
-                    <a class="nav-link col text-center" href="#">Menu</a>
-                    <a class="nav-link col text-center" href="#">Our story</a>
-                    <a class="nav-link col text-center" href="#">Our team</a>
+                    <a class="nav-link col text-center" href="#menu">Menu</a>
+                    <a class="nav-link col text-center" href="#story">Our story</a>
+                    <a class="nav-link col text-center" href="#team">Our team</a>
                     <a class="navbar-brand col text-center" href="#">
                         <img src="media/nav/isotipo.png" alt="" width="80">
                     </a>
-                    <a class="nav-link col text-center" href="#">The garden</a>
-                    <a class="nav-link col text-center" href="#">Shop</a>
-                    <a class="nav-link col text-center" href="https://petershamnurseriesblog.cargo.site">Blog</a>
+                    <a class="nav-link col text-center" href="#gallery">The garden</a>
+                    <a class="nav-link col text-center" href="#shop">Shop</a>
+                    <a class="nav-link col text-center" href="https://petershamnurseriesblog.cargo.siteblog">Blog</a>
                 </div>
             </div>
         </div>
@@ -61,34 +61,33 @@
                 <img src="media/header/header.jpeg" alt="">
             </div>
             <div id="header-text" class="d-flex flex-column align-items-end">
-                <h1>Petersham Nurseries</h1>
-                <h2>London, 1997</h2>
+                <h1 data-scroll data-scroll-speed="2" data-scroll-delay="0.2">Petersham Nurseries</h1>
+                <h2 data-scroll data-scroll-speed="2.5" data-scroll-delay="0.2">London, 1997</h2>
             </div>
         </header>
         <section id="intro" class="row">
             <div class="col-4">
-                <img src="media/intro/intro1.png" alt="" id="intro-img-a" data-scroll data-scroll-speed="0.5">
-                <img src="media/intro/intro3.png" alt="" id="intro-img-b" data-scroll data-scroll-speed="1.5">
+                <img src="media/intro/intro1.png" alt="" id="intro-img-a" data-scroll data-scroll-speed="-0.5" data-scroll-direction="horizontal">
+                <img src="media/intro/intro3.png" alt="" id="intro-img-b" data-scroll data-scroll-speed="-1.5" data-scroll-direction="horizontal">
             </div>
             <div class="col-4 d-flex flex-column justify-content-center" id="intro-title" data-scroll-container="">
-                <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">A place of calm, in tune with</h2><h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1">nature and living positively</h2>
+                <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.2">A place of calm, in tune with</h2><h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-0.2">nature and living positively</h2>
                 <p>Stepping into the world of Petersham Nurseries is to experience something unique. A destination like no other which stretches boundaries in what is created, sourced and served. Exciting senses and provoking thought; a place of aspiration and inspiration.”</p>
             </div>
             <div class="col-4">
-                <img src="media/intro/intro2.png" alt="" id="intro-img-c" data-scroll data-scroll-speed="2">
+                <img src="media/intro/intro2.png" alt="" id="intro-img-c" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
             </div>
         </section>
         <!-- menu -->
         <section id="menu">
-            <div id="menu-card">
-                <div class="menu-logo">
+            <div id="menu-card" data-scroll data-scroll-speed="1.1" data-scroll-delay="0.1">
+                <div class="menu-logo" data-scroll data-scroll-speed="1">
                     <img src="media/favicon/logo.png"  
                     alt="Restaurant Logo">
                 </div>
-                <h1 class="section-title">Our Menu</h1>
-                <div class="menu-container">
-                    <img 
-                src="media/menu.index/menu.jpeg" alt="Pathway" class="menu-image">
+                <h1 class="section-title" data-scroll data-scroll-speed="1">Our Menu</h1>
+                <div class="menu-container" data-scroll data-scroll-speed="1">
+                    <img src="media/menu.index/menu.jpeg" alt="Pathway" class="menu-image">
                     <h2 class="menu-subtitle">New on the Menu</h2>
                     <p class="menu-description">
                         Discover the art of fine dining with our carefully curated menu inspired by the seasons. Join us for a gastronomic journey like no other.
@@ -103,21 +102,34 @@
             <!-- <div id="timeline" class="col-6 d-flex" data-scroll data-scroll-speed="0.5"> -->
                 <div id="timeline-text" class="col-6" data-scroll-container>
                     <div id="timeline-a" class="timeline-item row">
-                        <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-a" data-scroll-repeat>Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
+                        <div data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-a" data-scroll-repeat>
+                            <h3 class="timeline-text">Petersham Nurseries</h3>
+                            <p class="timeline-text">Petersham Nurseries was born almost by accident when Gael and Francesco Boglione acquired the dilapidated Petersham House in the 1990s. Without imagining it, their new home in Richmond, overlooking a local nursery, would transform into an iconic lifestyle destination, a gardening center, and a restaurant with a prestigious Michelin Green Star.</p>
+                        </div>
                     </div>
                     <div id="timeline-b" class="timeline-item row">
-                        <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-b" data-scroll-repeat>El Comienzo
-                        En 1997, los Boglione se mudaron de Londres al histórico Petersham House, una propiedad del siglo XVIII. Frente a ella, un vivero abandonado les inspiró para crear algo especial. Francesco, con sus recuerdos de viajes como joven hippie en la India, y Gael, con su natural elegancia y enfoque en la simplicidad, comenzaron a darle vida al espacio, integrando sus experiencias de viaje y raíces culturales italianas y australianas.</p>
+                        <div data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-b" data-scroll-repeat>
+                            <h3 class="timeline-text">The Beginning</h3>
+                            <p class="timeline-text">In 1997, the Bogliones moved from London to the historic Petersham House, an 18th-century property. In front of it, an abandoned nursery inspired them to create something special. Francesco, with memories of his travels as a young hippie in India, and Gael, with her natural elegance and focus on simplicity, began bringing the space to life by integrating their travel experiences and their Italian and Australian cultural roots.</p>
+                        </div>
                     </div>
                     <div id="timeline-c" class="timeline-item row">
-                        <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-c" data-scroll-repeat>Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
+                        <div data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-c" data-scroll-repeat>
+                            <h3 class="timeline-text">The Evolution of the Space</h3>
+                            <p class="timeline-text">Over the years, the nursery evolved into a sanctuary blending nature, design, and gastronomy. With a strong commitment to sustainability, ethics, and aesthetics, the project became a destination where every detail reflects the family’s passion for positive living.</p>
+                        </div>
                     </div>
                     <div id="timeline-d" class="timeline-item row">
-                        <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-d" data-scroll-repeat>La Nueva Generación
-                        Desde 2011, Lara Boglione, hija mayor de Gael y Francesco, ha tomado las riendas del negocio como Directora General. Con una visión innovadora, Lara ha expandido la filosofía de Petersham, incluyendo la apertura de Petersham Nurseries en Covent Garden. Además, fundó junto a su esposo Petersham Cellar, una tienda de vinos italianos que celebra los valores familiares de tradición y calidad.</p>
+                        <div data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-d" data-scroll-repeat>
+                            <h3 class="timeline-text">The New Generation</h3>
+                            <p class="timeline-text">Since 2011, Lara Boglione, the eldest daughter of Gael and Francesco, has taken the reins of the business as Managing Director. With an innovative vision, Lara has expanded Petersham’s philosophy, including the opening of Petersham Nurseries in Covent Garden. Additionally, she founded Petersham Cellar with her husband, an Italian wine shop celebrating the family values of tradition and quality.</p>
+                        </div>
                     </div>
                     <div id="timeline-e" class="timeline-item row">
-                        <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-e" data-scroll-repeat>Hoy, Petersham Nurseries no solo es un lugar para reconectar con la naturaleza, sino también un símbolo de sostenibilidad y vida lenta, celebrando la belleza de lo simple en el hogar, el jardín y la mesa.</p>
+                        <div data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-e" data-scroll-repeat>
+                            <h3 class="timeline-text">Today</h3>
+                            <p class="timeline-text">Petersham Nurseries is not only a place to reconnect with nature but also a symbol of sustainability and slow living, celebrating the beauty of simplicity in the home, the garden, and at the table.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -191,7 +203,7 @@
         <!-- team -->
         <section  id="team" class="carousel-container">
             <div>
-                <h1>Team</h1>
+                <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.2">Team</h1>
             </div>
             <div class="swiper swiper-team">
                 <div class="swiper-wrapper">
@@ -351,10 +363,11 @@
                 </div>            
             </div>
         </section>
-        <section id="shop" class="shop" data-scroll-container>
-            <div class="cards" data-scroll data-scroll-direction="horizontal">
+        <section id="shop" class="shop">
+            <h1>Shop</h1>
+            <div class="cards">
                 <div class="shop-card">
-                    <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                    <model-viewer src="media/shop/ensaladera.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" auto-rotate class="shop-model"></model-viewer>
                     <!-- <img src="media/shop/vase.png"> -->
                     <div class="shop-info d-flex justify-content-between">
                         <h4>Violetta vase</h4>
@@ -362,7 +375,7 @@
                     </div>
                 </div>
                 <div class="shop-card">
-                    <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                    <model-viewer src="media/shop/tablascortar.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
                     <!-- <img src="media/shop/vase.png"> -->
                     <div class="shop-info d-flex justify-content-between">
                         <h4>Violetta vase</h4>
@@ -370,7 +383,7 @@
                     </div>
                 </div>        
                 <div class="shop-card">
-                    <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                    <model-viewer src="media/shop/taza.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
                     <!-- <img src="media/shop/vase.png"> -->
                     <div class="shop-info d-flex justify-content-between">
                         <h4>Violetta vase</h4>
@@ -477,10 +490,8 @@
     <!-- PARALLAX -->
     <script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script>
 
-
     <!-- MODEL VIEWER -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-
 
     <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
