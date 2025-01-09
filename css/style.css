@@ -323,6 +323,9 @@ img#intro-img-c {
     padding-bottom: 0 !important;
 }
 /* menu gallery */
+.gallery-menu {
+    background-color: var(--primary-green);
+}
 .gallery img {
     transition: transform 0.3s ease, opacity 0.3s ease;
     object-fit: cover;
