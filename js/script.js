@@ -3,6 +3,9 @@ $(document).ready(function() {
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
     });
+    window.addEventListener('load', () => {
+        scroll.update();
+      });
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             document.querySelectorAll('.nav-link').forEach(item => item.classList.remove('active'));
@@ -64,6 +67,7 @@ $(document).ready(function() {
     hoverGarden();
     $(window).on('resize', hoverGarden);
 });
+
 function ajustarAlturaTexto() {
     var alturaTotal = 0;
 
