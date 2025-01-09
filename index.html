@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Petersham Nurseries</title>
+    <link rel="icon" href="media/favicon/logo.png" type="image/x-icon">
+    
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
 
@@ -29,8 +30,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
 
 </head>
-<body data-scroll-container>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-custom d-flex flex-column">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand navbar-toggler" href="#">
                 <img src="media/nav/isotipo.png" alt="" width="80">
@@ -40,63 +41,139 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-flex align-items-center row">
-                    <a class="nav-link col text-center" href="#">Home</a>
-                    <a class="nav-link col text-center" href="#">Our story</a>
                     <a class="nav-link col text-center" href="#">Menu</a>
-                    <a class="nav-link col text-center" href="#">Shop</a>
+                    <a class="nav-link col text-center" href="#">Our story</a>
+                    <a class="nav-link col text-center" href="#">Our team</a>
                     <a class="navbar-brand col text-center" href="#">
                         <img src="media/nav/isotipo.png" alt="" width="80">
                     </a>
-                    <a class="nav-link col text-center" href="#">Events</a>
                     <a class="nav-link col text-center" href="#">The garden</a>
-                    <a class="nav-link col text-center" href="#">Our team</a>
-                    <a class="nav-link col text-center" href="#">philosophy</a>
+                    <a class="nav-link col text-center" href="#">Shop</a>
+                    <a class="nav-link col text-center" href="#">Blog</a>
                 </div>
             </div>
         </div>
-        <hr class="nav-separator">
+        <!-- <hr class="nav-separator"> -->
     </nav>
-    <header>
-        <div id="header-img">
-            <img src="media/header/header.png">
-        </div>
-    </header>
-    <section id="intro" class="row">
-        <div class="col-4">
-            <img src="media/intro/intro.png" alt="" id="intro-img-a" data-scroll data-scroll-speed="0.5">
-            <img src="media/intro/intro.png" alt="" id="intro-img-b" data-scroll data-scroll-speed="1.5">
-        </div>
-        <div class="col-4 d-flex flex-column justify-content-center" id="intro-title" data-scroll-container="">
-            <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">A place of calm, in tune with</h2><h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1">nature and living positively</h2>
-            <p>Stepping into the world of Petersham Nurseries is to experience something unique. A destination like no other which stretches boundaries in what is created, sourced and served. Exciting senses and provoking thought; a place of aspiration and inspiration.”</p>
-        </div>
-        <div class="col-4">
-            <img src="media/intro/intro.png" alt="" id="intro-img-c" data-scroll data-scroll-speed="2">
-        </div>
-    </section>
-    <section id="story" class="container-fluid row">
-        <h1>Our story</h1>
-        <!-- <div id="timeline" class="col-6 d-flex" data-scroll data-scroll-speed="0.5"> -->
-            <div id="timeline-text" class="col-6" data-scroll-container>
-                <div id="timeline-a" class="timeline-item row">
-                    <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-a">Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
+    <div data-scroll-container>
+        <header>
+            <div id="header-img">
+                <img src="media/header/header.jpeg" alt="">
+            </div>
+            <div id="header-text" class="d-flex flex-column align-items-end">
+                <h1 data-scroll data-scroll-speed="2" data-scroll-delay="0.2">Petersham Nurseries</h1>
+                <h2 data-scroll data-scroll-speed="2.5" data-scroll-delay="0.2">London, 1997</h2>
+            </div>
+        </header>
+        <section id="intro" class="row">
+            <div class="col-4">
+                <img src="media/intro/intro1.png" alt="" id="intro-img-a" data-scroll data-scroll-speed="0.5">
+                <img src="media/intro/intro3.png" alt="" id="intro-img-b" data-scroll data-scroll-speed="1.5">
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-center" id="intro-title" data-scroll-container="">
+                <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">A place of calm, in tune with</h2><h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1">nature and living positively</h2>
+                <p>Stepping into the world of Petersham Nurseries is to experience something unique. A destination like no other which stretches boundaries in what is created, sourced and served. Exciting senses and provoking thought; a place of aspiration and inspiration.”</p>
+            </div>
+            <div class="col-4">
+                <img src="media/intro/intro2.png" alt="" id="intro-img-c" data-scroll data-scroll-speed="2">
+            </div>
+        </section>
+        <!-- menu -->
+        <section id="menu">
+            <div id="menu-card" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.1">
+                <div class="menu-logo">
+                    <img src="media/favicon/logo.png"  
+                    alt="Restaurant Logo">
                 </div>
-                <div id="timeline-b" class="timeline-item row">
-                    <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-b">El Comienzo
-                    En 1997, los Boglione se mudaron de Londres al histórico Petersham House, una propiedad del siglo XVIII. Frente a ella, un vivero abandonado les inspiró para crear algo especial. Francesco, con sus recuerdos de viajes como joven hippie en la India, y Gael, con su natural elegancia y enfoque en la simplicidad, comenzaron a darle vida al espacio, integrando sus experiencias de viaje y raíces culturales italianas y australianas.</p>
-                </div>
-                <div id="timeline-c" class="timeline-item row">
-                    <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-c">Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
-                </div>
-                <div id="timeline-d" class="timeline-item row">
-                    <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-d">La Nueva Generación
-                    Desde 2011, Lara Boglione, hija mayor de Gael y Francesco, ha tomado las riendas del negocio como Directora General. Con una visión innovadora, Lara ha expandido la filosofía de Petersham, incluyendo la apertura de Petersham Nurseries en Covent Garden. Además, fundó junto a su esposo Petersham Cellar, una tienda de vinos italianos que celebra los valores familiares de tradición y calidad.</p>
-                </div>
-                <div id="timeline-e" class="timeline-item row">
-                    <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-e">Hoy, Petersham Nurseries no solo es un lugar para reconectar con la naturaleza, sino también un símbolo de sostenibilidad y vida lenta, celebrando la belleza de lo simple en el hogar, el jardín y la mesa.</p>
+                <h1 class="section-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.2" data-scroll-delay="0.2">Our Menu</h1>
+                <div class="menu-container">
+                    <img src="media/menu.index/menu.jpeg" alt="Pathway" class="menu-image">
+                    <h2 class="menu-subtitle" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.2" data-scroll-delay="0.2">New on the Menu</h2>
+                    <p class="menu-description">
+                        Discover the art of fine dining with our carefully curated menu inspired by the seasons. Join us for a gastronomic journey like no other.
+                    </p>
+                    <button onclick="location.href='menu.html'" class="menu-button">Explore the Menu</button>
                 </div>
             </div>
-            
+        </section>
+        <!-- STORY -->
+        <section id="story" class="container-fluid row">
+            <h1>Our story</h1>
+            <!-- <div id="timeline" class="col-6 d-flex" data-scroll data-scroll-speed="0.5"> -->
+                <div id="timeline-text" class="col-6" data-scroll-container>
+                    <div id="timeline-a" class="timeline-item row">
+                        <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-a" data-scroll-repeat>Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
+                    </div>
+                    <div id="timeline-b" class="timeline-item row">
+                        <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-b" data-scroll-repeat>El Comienzo
+                        En 1997, los Boglione se mudaron de Londres al histórico Petersham House, una propiedad del siglo XVIII. Frente a ella, un vivero abandonado les inspiró para crear algo especial. Francesco, con sus recuerdos de viajes como joven hippie en la India, y Gael, con su natural elegancia y enfoque en la simplicidad, comenzaron a darle vida al espacio, integrando sus experiencias de viaje y raíces culturales italianas y australianas.</p>
+                    </div>
+                    <div id="timeline-c" class="timeline-item row">
+                        <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-c" data-scroll-repeat>Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
+                    </div>
+                    <div id="timeline-d" class="timeline-item row">
+                        <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-d" data-scroll-repeat>La Nueva Generación
+                        Desde 2011, Lara Boglione, hija mayor de Gael y Francesco, ha tomado las riendas del negocio como Directora General. Con una visión innovadora, Lara ha expandido la filosofía de Petersham, incluyendo la apertura de Petersham Nurseries en Covent Garden. Además, fundó junto a su esposo Petersham Cellar, una tienda de vinos italianos que celebra los valores familiares de tradición y calidad.</p>
+                    </div>
+                    <div id="timeline-e" class="timeline-item row">
+                        <p class="timeline-text" data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-e" data-scroll-repeat>Hoy, Petersham Nurseries no solo es un lugar para reconectar con la naturaleza, sino también un símbolo de sostenibilidad y vida lenta, celebrando la belleza de lo simple en el hogar, el jardín y la mesa.</p>
+                    </div>
+                </div>
+                
+                <div id="timeline-img" class="col-6 d-flex flex-column" data-scroll data-scroll-speed="1.5">
+                    <img src="media/story/story1.png" alt="" class="timeline-img-item">
+                    <img src="media/story/story2.png" alt="" class="timeline-img-item">
+                    <img src="media/story/story3.png" alt="" class="timeline-img-item">
+                    <img src="media/story/story4.png" alt="" class="timeline-img-item">
+                    <img src="media/story/story5.png" alt="" class="timeline-img-item">
+                    <img src="media/story/story6.png" alt="" class="timeline-img-item">
+                    <img src="media/story/story7.png" alt="" class="timeline-img-item">
+                    <img src="media/story/story8.png" alt="" class="timeline-img-item">
+                    <img src="media/story/story9.png" alt="" class="timeline-img-item">
+                    <img src="media/story/story10.png" alt="" class="timeline-img-item">
+                </div>
+                <!-- <div id="timeline-a" class="row d-flex" data-scroll-container>
+                    <div class="col timeline-item">
+                        <p data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-a">Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
+                    </div>
+                    <div class="col" data-scroll data-scroll-speed="0.5">
+                        <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+                        <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+                        <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+                    </div>
+                </div>
+                <div id="timeline-b" class="row d-flex" data-scroll-container>
+                    <div class="col timeline-item">
+                        <p data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-b">El Comienzo
+                            En 1997, los Boglione se mudaron de Londres al histórico Petersham House, una propiedad del siglo XVIII. Frente a ella, un vivero abandonado les inspiró para crear algo especial. Francesco, con sus recuerdos de viajes como joven hippie en la India, y Gael, con su natural elegancia y enfoque en la simplicidad, comenzaron a darle vida al espacio, integrando sus experiencias de viaje y raíces culturales italianas y australianas.</p>
+                    </div>
+                    <div class="col" data-scroll data-scroll-speed="0.5">
+                        <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+                        <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+                        <img src="media/story/timeline.png" alt="" class="timeline-img-item">
+                    </div>
+                </div> -->
+                <!-- <div>
+                    <div class="timeline-item">
+                        <p>Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p>El Comienzo
+                        En 1997, los Boglione se mudaron de Londres al histórico Petersham House, una propiedad del siglo XVIII. Frente a ella, un vivero abandonado les inspiró para crear algo especial. Francesco, con sus recuerdos de viajes como joven hippie en la India, y Gael, con su natural elegancia y enfoque en la simplicidad, comenzaron a darle vida al espacio, integrando sus experiencias de viaje y raíces culturales italianas y australianas.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p>Evolución del Espacio
+                        A lo largo de los años, el vivero se transformó en un refugio que fusiona naturaleza, diseño y gastronomía. Con un firme compromiso con la sostenibilidad, ética y estética, el proyecto se convirtió en un destino donde cada detalle refleja la pasión de la familia por la vida positiva.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p>La Nueva Generación
+                        Desde 2011, Lara Boglione, hija mayor de Gael y Francesco, ha tomado las riendas del negocio como Directora General. Con una visión innovadora, Lara ha expandido la filosofía de Petersham, incluyendo la apertura de Petersham Nurseries en Covent Garden. Además, fundó junto a su esposo Petersham Cellar, una tienda de vinos italianos que celebra los valores familiares de tradición y calidad.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p>Hoy, Petersham Nurseries no solo es un lugar para reconectar con la naturaleza, sino también un símbolo de sostenibilidad y vida lenta, celebrando la belleza de lo simple en el hogar, el jardín y la mesa.</p>
+                    </div>
+                </div>
+            </div>
             <div id="timeline-img" class="col-6" data-scroll data-scroll-speed="2">
                 <img src="media/story/timeline.png" alt="" class="timeline-img-item">
                 <img src="media/story/timeline.png" alt="" class="timeline-img-item">
@@ -108,276 +185,284 @@
                 <img src="media/story/timeline.png" alt="" class="timeline-img-item">
                 <img src="media/story/timeline.png" alt="" class="timeline-img-item">
                 <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-                <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-            </div>
-            <!-- <div id="timeline-a" class="row d-flex" data-scroll-container>
-                <div class="col timeline-item">
-                    <p data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-a">Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
-                </div>
-                <div class="col" data-scroll data-scroll-speed="0.5">
-                    <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-                    <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-                    <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-                </div>
-            </div>
-            <div id="timeline-b" class="row d-flex" data-scroll-container>
-                <div class="col timeline-item">
-                    <p data-scroll data-scroll-speed="0.5" data-scroll-sticky data-scroll-target="#timeline-b">El Comienzo
-                        En 1997, los Boglione se mudaron de Londres al histórico Petersham House, una propiedad del siglo XVIII. Frente a ella, un vivero abandonado les inspiró para crear algo especial. Francesco, con sus recuerdos de viajes como joven hippie en la India, y Gael, con su natural elegancia y enfoque en la simplicidad, comenzaron a darle vida al espacio, integrando sus experiencias de viaje y raíces culturales italianas y australianas.</p>
-                </div>
-                <div class="col" data-scroll data-scroll-speed="0.5">
-                    <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-                    <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-                    <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-                </div>
             </div> -->
-            <!-- <div>
-                <div class="timeline-item">
-                    <p>Petersham Nurseries nació casi por accidente cuando Gael y Francesco Boglione adquirieron la deteriorada Petersham House en la década de 1990. Sin imaginarlo, su nuevo hogar en Richmond, con vistas a un vivero local, se transformaría en un emblemático destino de estilo de vida, un centro de jardinería y un restaurante con una prestigiosa estrella verde Michelin.</p>
-                </div>
-                <div class="timeline-item">
-                    <p>El Comienzo
-                    En 1997, los Boglione se mudaron de Londres al histórico Petersham House, una propiedad del siglo XVIII. Frente a ella, un vivero abandonado les inspiró para crear algo especial. Francesco, con sus recuerdos de viajes como joven hippie en la India, y Gael, con su natural elegancia y enfoque en la simplicidad, comenzaron a darle vida al espacio, integrando sus experiencias de viaje y raíces culturales italianas y australianas.</p>
-                </div>
-                <div class="timeline-item">
-                    <p>Evolución del Espacio
-                    A lo largo de los años, el vivero se transformó en un refugio que fusiona naturaleza, diseño y gastronomía. Con un firme compromiso con la sostenibilidad, ética y estética, el proyecto se convirtió en un destino donde cada detalle refleja la pasión de la familia por la vida positiva.</p>
-                </div>
-                <div class="timeline-item">
-                    <p>La Nueva Generación
-                    Desde 2011, Lara Boglione, hija mayor de Gael y Francesco, ha tomado las riendas del negocio como Directora General. Con una visión innovadora, Lara ha expandido la filosofía de Petersham, incluyendo la apertura de Petersham Nurseries en Covent Garden. Además, fundó junto a su esposo Petersham Cellar, una tienda de vinos italianos que celebra los valores familiares de tradición y calidad.</p>
-                </div>
-                <div class="timeline-item">
-                    <p>Hoy, Petersham Nurseries no solo es un lugar para reconectar con la naturaleza, sino también un símbolo de sostenibilidad y vida lenta, celebrando la belleza de lo simple en el hogar, el jardín y la mesa.</p>
-                </div>
+        </section>
+        <!-- team -->
+        <section  id="team" class="carousel-container">
+            <div>
+                <h1>Team</h1>
             </div>
-        </div>
-        <div id="timeline-img" class="col-6" data-scroll data-scroll-speed="2">
-            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-            <img src="media/story/timeline.png" alt="" class="timeline-img-item">
-        </div> -->
-    </section>
-    <!-- menu -->
-    <section id="menu">
-        <div id="menu-card">
-            <div class="menu-logo">
-                <img src="media/favicon/logo.png"  
-                alt="Restaurant Logo">
-            </div>
-            <h1 class="section-title">Our Menu</h1>
-            <div class="menu-container">
-                <img 
-            src="media/menu.index/menu.jpeg"        alt="Pathway" class="menu-image">
-                <h3 class="menu-subtitle">New on the Menu</h3>
-                <p class="menu-description">
-                    Discover the art of fine dining with our carefully curated menu inspired by the seasons. Join us for a gastronomic journey like no other.
-                </p>
-                <button onclick="location.href='menu.html'" class="menu-button">Explore the Menu</button>
-            </div>
-        </div>
-    </section>
-    <!-- team -->
-    <section  id="team" class="carousel-container">
-        <div>
-            <h1>TEAM</h1>
-        </div>
-        <div class="swiper swiper-team">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide card-team">
-                    <div class="card-img-team">
-                        <img src="media/team/team-1.jpg" alt="Foto 1">
-                        <p>Isabella Thornton<br>Executive chef</p>
+            <div class="swiper swiper-team">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide card-team">
+                        <div class="card-img-team">
+                            <img src="media/team/team-1.jpg" alt="Foto 1">
+                            <p>Isabella Thornton<br>Executive chef</p>
+                        </div>
+                        <div class="card-info-team">
+                            <p>Isabella leads the Petersham Nurseries kitchen with passion and creativity. A specialist in sustainable cuisine, she combines local, seasonal ingredients to craft unique dishes that reflect the spirit of nature. With over 15 years of experience in award-winning restaurants, she is the mastermind behind every menu.</p>
+                        </div>
                     </div>
-                    <div class="card-info-team">
-                        <p>Isabella leads the Petersham Nurseries kitchen with passion and creativity. A specialist in sustainable cuisine, she combines local, seasonal ingredients to craft unique dishes that reflect the spirit of nature. With over 15 years of experience in award-winning restaurants, she is the mastermind behind every menu.</p>
+                    <div class="swiper-slide card-team">
+                        <div class="card-img-team">
+                            <img src="media/team/team-2.jpg" alt="Foto 2">
+                            <p>Liam Carter<br>Head of Front of House</p>
+                        </div>
+                        <div class="card-info-team">
+                            <p>Liam ensures that every guest has an unforgettable dining experience. With his warm and professional approach, he coordinates the waiting staff and creates a welcoming yet elegant atmosphere. His hospitality expertise allows him to anticipate the needs of every diner.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card-team">
+                        <div class="card-img-team">
+                            <img src="media/team/team-3.jpg" alt="Foto 3">
+                            <p>Elena Moretti<br>Sommelier</p>
+                        </div>
+                        <div class="card-info-team">
+                            <p>Originally from Tuscany, Elena brings a deep knowledge of organic and biodynamic wines. At Petersham Nurseries, she helps guests find the perfect wine pairing for their meals, ensuring that every bottle tells a story as rich as the restaurant's flavors.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card-team">
+                        <div class="card-img-team">
+                            <img src="media/team/team-4.jpg" alt="Foto 4">
+                            <p>Oliver Banks<br>Sous Chef</p>
+                        </div>
+                        <div class="card-info-team">
+                            <p>As Isabella's right-hand man, Oliver brings energy and technical skill to the kitchen. His specialty is desserts, which he embellishes with edible flowers and aromatic herbs, perfectly embodying the floral and botanical essence of the restaurant.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card-team">
+                        <div class="card-img-team">
+                            <img src="media/team/team-5.jpg" alt="Foto 5">
+                            <p>Sofia Blake<br>General Manager</p>
+                        </div>
+                        <div class="card-info-team">
+                            <p>Sofia oversees the restaurant’s daily operations, ensuring every detail is impeccable, from the decor to the guest experience. Her focus on sustainability and innovative vision keeps Petersham Nurseries at the forefront of the industry.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card-team">
+                        <div class="card-img-team">
+                            <img src="media/team/team-6.jpg" alt="Foto 6">
+                            <p>Maxwell Reed<br>Gardener and Ingredient Provider</p>
+                        </div>
+                        <div class="card-info-team">
+                            <p>Maxwell tends the restaurant's garden, cultivating herbs, flowers, and vegetables used in the dishes. His connection to the land ensures the kitchen is always stocked with the freshest, most natural ingredients.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide card-team">
-                    <div class="card-img-team">
-                        <img src="media/team/team-2.jpg" alt="Foto 2">
-                        <p>Liam Carter<br>Head of Front of House</p>
-                    </div>
-                    <div class="card-info-team">
-                        <p>Liam ensures that every guest has an unforgettable dining experience. With his warm and professional approach, he coordinates the waiting staff and creates a welcoming yet elegant atmosphere. His hospitality expertise allows him to anticipate the needs of every diner.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide card-team">
-                    <div class="card-img-team">
-                        <img src="media/team/team-3.jpg" alt="Foto 3">
-                        <p>Elena Moretti<br>Sommelier</p>
-                    </div>
-                    <div class="card-info-team">
-                        <p>Originally from Tuscany, Elena brings a deep knowledge of organic and biodynamic wines. At Petersham Nurseries, she helps guests find the perfect wine pairing for their meals, ensuring that every bottle tells a story as rich as the restaurant's flavors.</p>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination d-flex justify-content-center"></div>
+            </div>
+        </section>
+        <!-- garden gallery -->
+        <section id="gallery" class="container-fluid py-5">
+            <h1 class="text-center mb-5">Garden Gallery</h1>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden1.jpeg" alt="Foto 1" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden1.png" alt="Foto 1" class="garden-main-img">
                     </div>
                 </div>
-                <div class="swiper-slide card-team">
-                    <div class="card-img-team">
-                        <img src="media/team/team-4.jpg" alt="Foto 4">
-                        <p>Oliver Banks<br>Sous Chef</p>
-                    </div>
-                    <div class="card-info-team">
-                        <p>As Isabella's right-hand man, Oliver brings energy and technical skill to the kitchen. His specialty is desserts, which he embellishes with edible flowers and aromatic herbs, perfectly embodying the floral and botanical essence of the restaurant.</p>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden2.jpeg" alt="Foto 2" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden2.png" alt="Foto 2" class="garden-main-img">
                     </div>
                 </div>
-                <div class="swiper-slide card-team">
-                    <div class="card-img-team">
-                        <img src="media/team/team-5.jpg" alt="Foto 5">
-                        <p>Sofia Blake<br>General Manager</p>
-                    </div>
-                    <div class="card-info-team">
-                        <p>Sofia oversees the restaurant’s daily operations, ensuring every detail is impeccable, from the decor to the guest experience. Her focus on sustainability and innovative vision keeps Petersham Nurseries at the forefront of the industry.</p>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden3.jpeg" alt="Foto 3" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden3.png" alt="Foto 3" class="garden-main-img">
                     </div>
                 </div>
-                <div class="swiper-slide card-team">
-                    <div class="card-img-team">
-                        <img src="media/team/team-6.jpg" alt="Foto 6">
-                        <p>Maxwell Reed<br>Gardener and Ingredient Provider</p>
-                    </div>
-                    <div class="card-info-team">
-                        <p>Maxwell tends the restaurant's garden, cultivating herbs, flowers, and vegetables used in the dishes. His connection to the land ensures the kitchen is always stocked with the freshest, most natural ingredients.</p>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden4.jpeg" alt="Foto 4" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden4.png" alt="Foto 4" class="garden-main-img">
                     </div>
                 </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden5.jpeg" alt="Foto 5" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden5.png" alt="Foto 5" class="garden-main-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden6.jpeg" alt="Foto 6" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden6.png" alt="Foto 6" class="garden-main-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden7.jpeg" alt="Foto 7" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden7.png" alt="Foto 7" class="garden-main-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden8.jpeg" alt="Foto 8" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden8.png" alt="Foto 8" class="garden-main-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden9.jpeg" alt="Foto 9" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden9.png" alt="Foto 9" class="garden-main-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden10.jpeg" alt="Foto 10" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden10.png" alt="Foto 10" class="garden-main-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden11.jpeg" alt="Foto 11" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden11.png" alt="Foto 11" class="garden-main-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden12.jpeg" alt="Foto 12" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden12.png" alt="Foto 12" class="garden-main-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden13.jpeg" alt="Foto 13" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden13.png" alt="Foto 13" class="garden-main-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden14.jpeg" alt="Foto 14" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden14.png" alt="Foto 14" class="garden-main-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="media/garden-gallery/garden15.jpeg" alt="Foto 15" class="garden-hover-img">
+                        <img src="media/garden-gallery-hovers/garden15.png" alt="Foto 15" class="garden-main-img">
+                    </div>
+                </div>            
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination d-flex justify-content-center"></div>
-        </div>
-    </section>
-    <!-- garden gallery -->
-    <section id="gallery" class="container-fluid py-5">
-        <h1 class="text-center mb-5">Garden Gallery</h1>
-        <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden1.jpeg" alt="Foto 1">
+        </section>
+        <section id="shop" class="shop" data-scroll-container>
+            <div class="cards" data-scroll data-scroll-direction="horizontal">
+                <div class="shop-card">
+                    <model-viewer src="media/shop/ensaladera.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" auto-rotate class="shop-model"></model-viewer>
+                    <!-- <img src="media/shop/vase.png"> -->
+                    <div class="shop-info d-flex justify-content-between">
+                        <h4>Violetta vase</h4>
+                        <p>£13.50</p>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <model-viewer src="media/shop/tablascortar.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                    <!-- <img src="media/shop/vase.png"> -->
+                    <div class="shop-info d-flex justify-content-between">
+                        <h4>Violetta vase</h4>
+                        <p>£13.50</p>
+                    </div>
+                </div>        
+                <div class="shop-card">
+                    <model-viewer src="media/shop/taza.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                    <!-- <img src="media/shop/vase.png"> -->
+                    <div class="shop-info d-flex justify-content-between">
+                        <h4>Violetta vase</h4>
+                        <p>£13.50</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden2.jpeg" alt="Foto 2">
+        </section>
+
+        <section id="blog" class="conect-blog">
+            <h1 class="text-center mb-6">Blog</h1>
+            <div class="cards" data-scroll data-scroll-direction="horizontal">
+
+                <a href="https://908345.cargo.site/edit/Z1208284202" class="blog-card">
+                    <div class="blog-info d-flex justify-content-between">
+                        <h4>THE HISTORY OF LAVENDER IN OUR RESTAURANT</h4>
+                        <p>Did you know that behind every bunch of lavender there are centuries 
+                            of stories, legends and fascinating uses? 
+                        </p>
+                    </div>
+                </a>
+        
+                <a href="https://908345.cargo.site/edit/Z0505022630" class="blog-card">
+                    <div class="blog-info d-flex justify-content-between">
+                        <h4>WINTER SALAD WITH CITRUS FRUITS AND FRESH LEAVES</h4>
+                        <p>A fresh and vibrant dish combining seasonal citrus and leafy greens, this is a perfect combination.
+                        </p>
+                    </div>
+                </a>        
+        
+                <a href="https://908345.cargo.site/edit/Z0528303513" class="blog-card">
+                    <div class="blog-info d-flex justify-content-between">
+                        <h4>MONTHLY FESTIVITIES (JANUARY 2025)</h4>
+                        <p>On the 1st of January we celebrate the New Year, we 
+                            are only open in the evening to serve dinner.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <footer class="container-fluid px-0">
+            <div id="footer-a" class="row pb-4">
+                <div class="col-4 ps-0 pe-4">
+                    <h4>Join our newsletter</h4>
+                    <form class="row gap-2">
+                        <input type="text" id="user_name" name="name" placeholder="Name" required="">
+                        <input type="text" id="user_email" name="mail" placeholder="Mail" required="">
+                        <button>Send!</button>
+                    </form>
+                </div>
+                <div class="col-8 ps-4 pe-0">
+                    <h4>Opening hours</h4>
+                    <div class="row gap-2">
+                        <ul class="col">
+                            <li><b>Monday</b></li>
+                            <li>Closed (Except bank holidays)</li>
+                        </ul>
+                        <ul class="col">
+                            <li><b>Tuesday to Wednesday</b></li>
+                            <li>12pm to 5pm (Last seating 3pm)</li>
+                        </ul>
+                        <ul class="col">
+                            <li><b>Thursday to Saturday</b></li>
+                            <li>Lunch 12pm to 5pm (Last seating 2.30pm)
+                                Dinner 6:30pm to 11pm (Last seating 8.30pm)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden3.jpeg" alt="Foto 3">
-                </div>
+            <div id="footer-b">
+                <ul class="row py-2">
+                    <li class="col d-flex justify-content-center">© 2023 PETERSHAM NURSERIES </li>
+                    <li class="d-flex col justify-content-center">
+                        <ul class="d-flex socials">
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-tiktok"></i></li>
+                        </ul>
+                    </li>
+                    <li class="col d-flex justify-content-center"><a href="#">Back to top</a></li>
+                </ul>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden4.jpeg" alt="Foto 4">
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden5.jpeg" alt="Foto 5">
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden6.jpeg" alt="Foto 6">
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden7.jpeg" alt="Foto 7">
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden8.jpeg" alt="Foto 8">
-                </div>
-            </div>
-            <div class="col-12 col-md-8">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden9.jpeg" alt="Foto 9">
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden10.jpeg" alt="Foto 10">
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden11.jpeg" alt="Foto 11">
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden12.jpeg" alt="Foto 12">
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden13.jpeg" alt="Foto 13">
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden14.jpeg" alt="Foto 14">
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="gallery-item">
-                    <img src="media/garden-gallery/garden15.jpeg" alt="Foto 15">
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="container-fluid px-0">
-        <div id="footer-a" class="row pb-4">
-            <div class="col-4 ps-0 pe-4">
-                <h4>Join our newsletter</h4>
-                <form class="row gap-2">
-                    <input type="text" id="user_name" name="name" placeholder="Name" required="">
-                    <input type="text" id="user_email" name="mail" placeholder="Mail" required="">
-                    <button>Send!</button>
-                </form>
-            </div>
-            <div class="col-8 ps-4 pe-0">
-                <h4>Opening hours</h4>
-                <div class="row gap-2">
-                    <ul class="col">
-                        <li><b>Monday</b></li>
-                        <li>Closed (Except bank holidays)</li>
-                    </ul>
-                    <ul class="col">
-                        <li><b>Tuesday to Wednesday</b></li>
-                        <li>12pm to 5pm (Last seating 3pm)</li>
-                    </ul>
-                    <ul class="col">
-                        <li><b>Thursday to Saturday</b></li>
-                        <li>Lunch 12pm to 5pm (Last seating 2.30pm)
-                            Dinner 6:30pm to 11pm (Last seating 8.30pm)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="footer-b">
-            <ul class="row py-2">
-                <li class="col d-flex justify-content-center">© 2023 PETERHAM NURSERIES </li>
-                <li class="d-flex col justify-content-center">
-                    <ul class="d-flex socials">
-                        <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-twitter"></i></li>
-                        <li><i class="fa-brands fa-tiktok"></i></li>
-                    </ul>
-                </li>
-                <li class="col d-flex justify-content-center"><a href="#">Back to top</a></li>
-            </ul>
-        </div>
-    </footer>
+        </footer>
+    </div>
     
     <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Incluye la librería de GSAP -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script> -->
+    <!-- Incluye el plugin ScrollTrigger -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script> -->
+
+
    
     <!-- SWIPER JS-->
     <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
@@ -385,11 +470,11 @@
     <!-- JAVASCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-
     <!-- LOCOMOTIVE SCROLL -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 
     
+
     <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
 </body>
