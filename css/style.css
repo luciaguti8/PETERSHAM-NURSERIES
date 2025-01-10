@@ -182,8 +182,6 @@ img#intro-img-c {
     overflow: hidden;
 }
 .menu-container {
-    /* text-align: center;
-    position: relative; */
     display: flex;
     gap: 1vw;
     flex-direction: column;
@@ -198,17 +196,6 @@ img#intro-img-c {
     width: 20%;
     height: auto;
 }
-/* .menu-header {
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: 400;
-    color: var(--primary-green);
-    position: absolute;
-    top: -2rem;
-    left: -1rem;
-    z-index: -1;
-    opacity: 0.1;
-} */
 .menu-image {
     width: 60%;
     height: auto;
@@ -217,16 +204,12 @@ img#intro-img-c {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .menu-subtitle {
-    /* font-size: 1.5rem;
-    font-weight: bold; */
-    /* margin-bottom: 1rem; */
     padding-bottom: 0;
     text-transform: uppercase;
     color: var(--primary-green);
     padding-top: 2vw;
 }
 .menu-description {
-    /* font-size: 1rem; */
     color: var(--black);
     margin-bottom: 2rem;
     padding: 0 1rem;
@@ -235,10 +218,6 @@ img#intro-img-c {
 #menu h1, #header-text h1 {
     padding-bottom: 0 !important;
 }
-/* menu gallery */
-/* .gallery-menu {
-    background-color: var(--primary-green);
-} */
 .gallery img {
     transition: transform 0.3s ease, opacity 0.3s ease;
     object-fit: cover;
@@ -261,10 +240,6 @@ body.no-scroll {
     overflow: hidden;
 }
 /* story  */
-/* #story {
-    height: 60vh;
-    overflow-y: scroll;
-} */
 #story {
     position: relative;
 }
@@ -277,8 +252,6 @@ body.no-scroll {
 }
 .timeline-img-item {
     width: 100%;
-    /* height: auto; */
-    /* aspect-ratio: 14/9; */
     object-fit: cover;
     display: block;
     padding-bottom: 20px;
@@ -292,12 +265,10 @@ body.no-scroll {
 }
 #timeline-text {
     margin-top: -20vh !important;
-    /* z-index: -1; */
     min-height: 3100px !important;
 }
 #timeline-img {
     margin-top: -20vh !important;
-    /* max-height: 380vh; */
     min-height: 3100px !important;
 }
 .timeline-phone {
@@ -337,9 +308,7 @@ body.no-scroll {
 #team .card-img-team p {
     text-align: center;
     font-style: italic;
-    /* line-height: 1.8vw; */
     padding-top: 8px;
-    /* padding-bottom: 2px; */
 }
 #team .card-img-team {
     width: 40%;
@@ -390,9 +359,6 @@ body.no-scroll {
     position: absolute;
     top: 0;
     left: 0;
-    /* width: 100%;
-    height: 100%; */
-    /* object-fit: cover; */
     clip-path: circle(0% at 50% 50%);
     transition: clip-path 0.1s ease;
     pointer-events: none;
@@ -532,7 +498,6 @@ footer button:hover {
     position: relative;
     text-align: center;
     margin-bottom: 0;
-    /* height: 8vw; */
     display: flex;
     align-items: center;
     justify-content: center ;

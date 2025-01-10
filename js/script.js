@@ -13,14 +13,12 @@ $(document).ready(function() {
 
     anchors.forEach(anchor => {
         anchor.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevenir el comportamiento por defecto del navegador
+            event.preventDefault();
 
-            // Obtener el ID de la sección a la que apunta el href del enlace
             const targetId = anchor.getAttribute('href');
             const targetElement = document.querySelector(targetId);
             console.log("Element", targetId);
             if (targetElement) {
-                // Usar Locomotive para navegar a la sección
                 scroll.scrollTo(targetElement);
             }
         });
@@ -55,7 +53,7 @@ $(document).ready(function() {
             $('.gallery-item').each(function() {
                 const hoverImage = $(this).find('.garden-hover-img');
         
-                $(this).off('mousemove mouseleave'); // Elimina eventos anteriores
+                $(this).off('mousemove mouseleave');
         
                 $(this).on('mousemove', function(event) {
                     const offsetX = event.offsetX;
@@ -72,8 +70,8 @@ $(document).ready(function() {
         } else {
             $('.gallery-item').each(function() {
                 const hoverImage = $(this).find('.garden-hover-img');
-                $(this).off('mousemove mouseleave'); // Elimina eventos en dispositivos pequeños
-                hoverImage.css('clip-path', ''); // Resetea estilos
+                $(this).off('mousemove mouseleave'); 
+                hoverImage.css('clip-path', '');
             });
         }
     }
@@ -94,29 +92,24 @@ function ajustarAlturaTexto() {
 }
 
 function ajustarAlturaImagenes() {
-    // Llama primero a ajustarAlturaTexto para asegurar consistencia
     ajustarAlturaTexto();
 
-    // Obtén la altura actual de #timeline-text
     var alturaTexto = $('#timeline-text').outerHeight();
 
-    // Calcula la altura por imagen
     var numImagenes = $('.timeline-img-item').length;
     var alturaPorImagen = alturaTexto / numImagenes;
 
-    // Ajusta cada imagen
     $('.timeline-img-item').css({
         width: '100%',
         height: alturaPorImagen + 'px',
         objectFit: 'cover',
     });
 }
-// Llama a las funciones cuando la página y sus recursos estén completamente cargados
+
 $(window).on('load', function () {
     ajustarAlturaTexto();
     ajustarAlturaImagenes();
 });
-// Recalcula al redimensionar la ventana
 $(window).resize(function () {
     ajustarAlturaTexto();
     ajustarAlturaImagenes();
