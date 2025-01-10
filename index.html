@@ -367,7 +367,7 @@
                             <h5 class="card-title mb-3">The History of Lavender in Our Restaurant</h5>
                             <p class="card-text">Did you know that behind every bunch of lavender there are centuries of stories, legends, and fascinating uses?</p>
                             <br>
-                            <button onclick="location".href="https://petershamnurseriesblog.cargo.site/botanical-stories">Read More</button>
+                            <button onclick="location.href='https://petershamnurseriesblog.cargo.site/events'">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -396,9 +396,11 @@
             </div>
         </section>
         <!-- shop -->
-        <section id="shop" class="shop" data-scroll-container>
-            <h1 class="text-center mb-6">Shop</h1>
-            <div class="cards" data-scroll data-scroll-direction="horizontal">
+<section id="shop" class="shop" data-scroll-container>
+    <h1 class="text-center mb-6">Shop</h1>
+    <div class="container-fluid">
+        <div class="row" data-scroll data-scroll-direction="horizontal">
+            <div class="col-lg-4 col-md-12 mb-6">
                 <div class="shop-card">
                     <model-viewer src="media/shop/ensaladera.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" auto-rotate class="shop-model"></model-viewer>
                     <div class="shop-info d-flex justify-content-between">
@@ -406,13 +408,17 @@
                         <p>£13.50</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-6">
                 <div class="shop-card">
                     <model-viewer src="media/shop/tablascortar.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
                     <div class="shop-info d-flex justify-content-between">
                         <h4>Violetta vase</h4>
                         <p>£13.50</p>
                     </div>
-                </div>        
+                </div>
+            </div>        
+            <div class="col-lg-4 col-md-12 mb-6">
                 <div class="shop-card">
                     <model-viewer src="media/shop/taza.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
                     <div class="shop-info d-flex justify-content-between">
@@ -421,7 +427,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
         <!-- footer -->
         <footer class="container-fluid px-0">
             <div id="footer-a" class="row pb-4">
