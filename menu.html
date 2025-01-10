@@ -63,15 +63,15 @@
         </header>
         <!-- intro  -->
         <section id="intro" class="row">
-            <div class="col-4">
+            <div class="col col-lg-4 col-md-3">
                 <img src="media/intro-menu/intro-menu1.png" alt="" id="intro-img-a" data-scroll data-scroll-speed="-0.5" data-scroll-direction="horizontal">
                 <img src="media/intro-menu/intro-menu3.png" alt="" id="intro-img-b" data-scroll data-scroll-speed="-1.5" data-scroll-direction="horizontal">
             </div>
-            <div class="col-4 d-flex flex-column justify-content-center" id="intro-title" data-scroll-container="">
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center" id="intro-title" data-scroll-container="">
                 <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.2">Harvested with care,</h2><h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-0.2">served with love</h2>
-                <p>At Petersham Nurseries, every dish tells a unique story, inspired by the natural beauty of our own garden. Most of our ingredients, from the freshest vegetables to aromatic herbs, are carefully grown in our nursery, ensuring unmatched freshness and quality. We proudly work with local and seasonal products, allowing us to create bold and original flavors while honoring the environment and regional culinary traditions. Our signature dishes are a true explosion of flavors, where simplicity meets sophistication, offering an unforgettable dining experience that celebrates the essence of nature.</p>
+                <p>At Petersham Nurseries, every dish tells a unique story, inspired by the natural beauty of our own garden. Most of our ingredients, from the freshest vegetables to aromatic herbs, are carefully grown in our nursery, ensuring unmatched freshness and quality. Our signature dishes are a explosion of flavors, where simplicity meets sophistication, offering an unforgettable experience that celebrates the essence of nature.</p>
             </div>
-            <div class="col-4">
+            <div class="col col-lg-4 col-md-3">
                 <img src="media/intro-menu/intro-menu2.png" alt="" id="intro-img-c" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
             </div>
         </section>
@@ -158,7 +158,7 @@
         <!-- footer -->
         <footer class="container-fluid px-0">
             <div id="footer-a" class="row pb-4">
-                <div class="col-4 ps-0 pe-4">
+                <div class="col-md-4 col-sm-12 ps-0 pe-md-4">
                     <h4>Join our newsletter</h4>
                     <form class="row gap-2">
                         <input type="text" id="user_name" name="name" placeholder="Name" required="">
@@ -166,9 +166,9 @@
                         <button type="submit" id="submit">Send!</button>
                     </form>
                 </div>
-                <div class="col-8 ps-4 pe-0">
+                <div class="col-md-8 col-sm-12 pe-0">
                     <h4>Opening hours</h4>
-                    <div class="row gap-2">
+                    <div class="row gap-3 d-flex flex-sm-column flex-md-row">
                         <ul class="col">
                             <li><b>Monday</b></li>
                             <li>Closed (Except bank holidays)</li>
@@ -186,16 +186,16 @@
                 </div>
             </div>
             <div id="footer-b">
-                <ul class="row py-2">
-                    <li class="col d-flex justify-content-center">© 2023 PETERSHAM NURSERIES </li>
-                    <li class="d-flex col justify-content-center">
+                <ul class="row py-2 d-flex">
+                    <li class="col-md-4 col-6 d-flex justify-content-center">>© 2023 PETERSHAM NURSERIES </li>
+                    <li class="col-md-4 col-6 d-flex col justify-content-center">
                         <ul class="d-flex socials">
                             <li><i class="fa-brands fa-instagram"></i></li>
                             <li><i class="fa-brands fa-twitter"></i></li>
                             <li><i class="fa-brands fa-tiktok"></i></li>
                         </ul>
                     </li>
-                    <li class="col d-flex justify-content-center"><a href="menu.html">Back to top</a></li>
+                    <li class="col-4 d-flex justify-content-center"><a href="menu.html" id="back-to-top">Back to top</a></li>
                 </ul>
             </div>
         </footer>
@@ -203,7 +203,7 @@
         <div id="thanks-modal" class="modal">
             <div class="modal-content">
             <i class="fa-solid fa-xmark fa-2xl close d-flex flex-wrap justify-content-end align-items-center"></i>
-            <h5 id="modal-text"></h5>
+            <p id="modal-text"></p>
             </div>
         </div>
     </div>
