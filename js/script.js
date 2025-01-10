@@ -158,7 +158,7 @@ $('#submit').click(function() {
     if (name == "" || email == "" ) {
         message = "You must complete your name and email to subscribe to our Newsletter";
         $('body').css('overflow', 'hidden')
-    } else if (!validateEmail(email)) {
+    } else if  (!validateEmail(email)) {
         message = "Please enter a valid email address.";
         $('body').css('overflow', 'hidden')
     } else {
