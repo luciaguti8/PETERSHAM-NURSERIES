@@ -3,7 +3,7 @@ $(document).ready(function() {
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
         mobile: {
-            smooth: true
+            smooth: false
         },
         tablet: {
             smooth: true
@@ -26,6 +26,19 @@ $(document).ready(function() {
         });
     });
 
+    $('#read-more-a').on('click', function () {
+        window.open('https://petershamnurseriesblog.cargo.site/botanical-stories', '_blank');
+    });
+    
+    $('#read-more-b').on('click', function () {
+        window.open('https://petershamnurseriesblog.cargo.site/recipes', '_blank');
+    });
+    
+    $('#read-more-c').on('click', function () {
+        window.open('https://petershamnurseriesblog.cargo.site/events', '_blank');
+    });
+    
+
 
     window.addEventListener('load', () => {
         scroll.update();
@@ -41,24 +54,33 @@ $(document).ready(function() {
         if ($(window).width() > 992) {
             $('.gallery-item').each(function() {
                 const hoverImage = $(this).find('.garden-hover-img');
-    
+        
+                $(this).off('mousemove mouseleave'); // Elimina eventos anteriores
+        
                 $(this).on('mousemove', function(event) {
                     const offsetX = event.offsetX;
                     const offsetY = event.offsetY;
                     const radius = 100; 
-    
+        
                     hoverImage.css('clip-path', `circle(${radius}px at ${offsetX}px ${offsetY}px)`);
                 });
-    
+        
                 $(this).on('mouseleave', function() {
                     hoverImage.css('clip-path', 'circle(0% at 50% 50%)');
                 });
             });
-        }   
+        } else {
+            $('.gallery-item').each(function() {
+                const hoverImage = $(this).find('.garden-hover-img');
+                $(this).off('mousemove mouseleave'); // Elimina eventos en dispositivos pequeños
+                hoverImage.css('clip-path', ''); // Resetea estilos
+            });
+        }
     }
     
     hoverGarden();
     $(window).on('resize', hoverGarden);
+    
 });
 // story 
 function ajustarAlturaTexto() {
