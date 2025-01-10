@@ -522,16 +522,16 @@ footer button:hover {
     color: var(--primary-green);
     transition: 0.2s ease-in-out;
 }
-.modal-content h5 {
+.modal-content p {
     width: 100%;
     position: relative;
     text-align: center;
     margin-bottom: 0;
-    height: 8vw;
+    /* height: 8vw; */
     display: flex;
     align-items: center;
     justify-content: center ;
-    padding: 0px 24px;
+    padding: 8px 24px;
 }
 
 /* media query */
