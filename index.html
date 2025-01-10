@@ -396,41 +396,40 @@
             </div>
         </section>
         <!-- shop -->
-<section id="shop" class="shop" data-scroll-container>
-    <h1 class="text-center mb-6">Shop</h1>
-    <div class="container-fluid">
-        <div class="row" data-scroll data-scroll-direction="horizontal">
-            <div class="col-lg-4 col-md-12 mb-6">
-                <div class="shop-card">
-                    <model-viewer src="media/shop/ensaladera.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" auto-rotate class="shop-model"></model-viewer>
-                    <div class="shop-info d-flex justify-content-between">
-                        <h4>Violetta vase</h4>
-                        <p>£13.50</p>
+        <section id="shop" class="shop" data-scroll-container>
+            <h1 class="text-center mb-6">Shop</h1>
+            <div class="container-fluid">
+                <div class="row" data-scroll data-scroll-direction="horizontal">
+                    <div class="col-lg-4 col-md-12 mb-6">
+                        <div class="shop-card">
+                            <model-viewer src="media/shop/ensaladera.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" auto-rotate class="shop-model"></model-viewer>
+                            <div class="shop-info d-flex justify-content-between">
+                                <h4>Violetta vase</h4>
+                                <p>£13.50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-6">
+                        <div class="shop-card">
+                            <model-viewer src="media/shop/tablascortar.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                            <div class="shop-info d-flex justify-content-between">
+                                <h4>Violetta vase</h4>
+                                <p>£13.50</p>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="col-lg-4 col-md-12 mb-6">
+                        <div class="shop-card">
+                            <model-viewer src="media/shop/taza.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
+                            <div class="shop-info d-flex justify-content-between">
+                                <h4>Violetta vase</h4>
+                                <p>£13.50</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12 mb-6">
-                <div class="shop-card">
-                    <model-viewer src="media/shop/tablascortar.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
-                    <div class="shop-info d-flex justify-content-between">
-                        <h4>Violetta vase</h4>
-                        <p>£13.50</p>
-                    </div>
-                </div>
-            </div>        
-            <div class="col-lg-4 col-md-12 mb-6">
-                <div class="shop-card">
-                    <model-viewer src="media/shop/taza.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" shadow-intensity="1" auto-rotate class="shop-model"></model-viewer>
-                    <div class="shop-info d-flex justify-content-between">
-                        <h4>Violetta vase</h4>
-                        <p>£13.50</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+        </section>
         <!-- footer -->
         <footer class="container-fluid px-0">
             <div id="footer-a" class="row pb-4">
@@ -439,7 +438,7 @@
                     <form class="row gap-2">
                         <input type="text" id="user_name" name="name" placeholder="Name" required="">
                         <input type="text" id="user_email" name="mail" placeholder="Mail" required="">
-                        <button>Send!</button>
+                        <button type="submit" id="submit">Send!</button>
                     </form>
                 </div>
                 <div class="col-8 ps-4 pe-0">
@@ -475,6 +474,13 @@
                 </ul>
             </div>
         </footer>
+    </div>
+    <!-- modal footer -->
+    <div id="thanks-modal" class="modal">
+        <div class="modal-content">
+          <i class="fa-solid fa-xmark fa-2xl close d-flex flex-wrap justify-content-end align-items-center"></i>
+          <h5 id="modal-text"></h5>
+        </div>
     </div>
     
     <!-- SWIPER JS-->

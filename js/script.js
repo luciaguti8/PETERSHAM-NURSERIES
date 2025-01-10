@@ -123,11 +123,11 @@ $('#submit').click(function() {
     let email = $('#user_email').val();
     var message = "";
     if (name == "" || email == "" ) {
-        message = "Debes completar tu nombre y correo para poder suscribirte a nuestra Newsletter";
+        message = "You must complete your name and email to subscribe to our Newsletter";
     } else if (!validateEmail(email)) {
-        message = "Por favor, inserta una dirección de correo válida";
+        message = "Please enter a valid email address.";
     } else {
-        message = "¡Muchas gracias por contactar con nosotros! Recibirás una respuesta lo antes posible";
+        message = "Thank you for contacting us! You will receive a response as soon as possible!";
     }
     $("#modal-text").html(message);
     $("#thanks-modal").css('display', 'block');
