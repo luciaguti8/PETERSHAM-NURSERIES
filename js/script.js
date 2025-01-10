@@ -164,10 +164,13 @@ $('#submit').click(function() {
     var message = "";
     if (name == "" || email == "" ) {
         message = "You must complete your name and email to subscribe to our Newsletter";
+        $('body').css('overflow', 'hidden')
     } else if (!validateEmail(email)) {
         message = "Please enter a valid email address.";
+        $('body').css('overflow', 'hidden')
     } else {
         message = "Thank you for contacting us! You will receive a response as soon as possible!";
+        $('body').css('overflow', 'hidden')
     }
     $("#modal-text").html(message);
     $("#thanks-modal").css('display', 'block');
@@ -175,6 +178,7 @@ $('#submit').click(function() {
 });
 $('.close').click(function(){
     $("#thanks-modal").css('display', 'none');
+    $('body').css('overflow', 'auto')
 });
 const validateEmail = (email) => {
 return String(email)
