@@ -78,6 +78,7 @@ section {
 }
 .navbar-nav {
     width: 100%;
+    padding: 8px 0px;
 }
 .navbar-brand {
     padding: 0 !important;
@@ -147,7 +148,7 @@ img#intro-img-b {
     top: 8vw;
     left: -5vw;
     aspect-ratio: 1;
-    width: 15vw;
+    width: 14vw;
 }
 img#intro-img-c {
     position: relative;
@@ -276,7 +277,7 @@ body.no-scroll {
     margin-bottom: 2vw !important;
 } 
 .timeline-item {
-    padding-top: 40vh;
+    padding-top: 294px;
 }
 .timeline-img-item {
     width: 100%;
@@ -305,7 +306,7 @@ body.no-scroll {
 }
 /* team */
 #team {
-    margin-top: -24vh !important;
+    margin-top: -20vh !important;
     background-color: var(--primary-green);
     position: relative;
     z-index: 1;
@@ -489,6 +490,9 @@ footer button:hover {
 
 /* media query */
 @media screen and (max-width: 992px) {
+    .navbar {
+        padding: 8px 12px;
+    }
     .navbar-nav > .navbar-brand {
         display: none;    
     }
